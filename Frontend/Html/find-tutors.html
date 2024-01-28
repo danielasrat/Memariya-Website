@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Tutors</title>
+    <link rel="stylesheet" href="../CSS/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body class="bg-gradient-to-b from-custom to-white bg-no-repeat bg-cover bg-fixed">
+
+    <header>
+        <nav class="bg-custom">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    <div class="flex-shrink-0">
+                        <img class="h-24" src="../Designs/Logo/memariyacom-logos_transparent.png" alt="Your Company">
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Home</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Dashboard</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                            aria-current="page">Courses</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Quizzes</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Find
+                            Tutors</a>
+                    </div>
+                    <div class="md:hidden">
+                        <!-- Mobile menu button -->
+                        <button type="button"
+                            class="text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Hamburger icon -->
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium"
+                        aria-current="page">Home</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Dashboard</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Courses</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Quizzes</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Find
+                        Tutors</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto my-8">
+        
+            <h2 class="text-2xl font-bold text-center text-custom">
+                Enjoy what a premium account has to offer by contacting competent tutors
+            </h2>
+            <p class="mt-4 text-center">
+                Select a given course and click the "Display Tutors" button to find a tutor of your choice.
+            </p>
+
+            <div class="container md:w-2/3 mx-auto w-full my-10">
+
+                <div class="mt-4 mx-4 flex items-center space-x-4 justify-between ">
+                    <label class="block">
+                        <select class="border p-2 rounded bg-custom text-white">
+                            <option value="">Courses</option>
+                            <option value="1">Python</option>
+                            <option value="2">JavaScript</option>
+                            <option value="3">HTML and CSS</option>
+                            <option value="4">C++</option>
+                        </select>
+                    </label>
+                    <button class="bg-custom text-white p-2 rounded hover:bg-customdark">
+                        Display Tutors
+                    </button>
+                </div>
+                
+                <div class="mt-20 mx-4 grid grid-cols-1  gap-6 ">
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-black mr-4 rounded-full"></div>
+                        <div class="ml-20">
+                            <h3 class="text-lg font-bold">John Doe</h3>
+                            <p>Expertise: STHSTh</p>
+                            <p>Username: foobarfoo</p>
+                            <p>Average Rating: 4.5</p>
+                            <p>Contact Info: Email: john.doe@example.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-black mr-4 rounded-full"></div>
+                        <div class="ml-20">
+                            <h3 class="text-lg font-bold">Jane Doe</h3>
+                            <p>Expertise: STHSTh</p>
+                            <p>Username: janedoe</p>
+                            <p>Average Rating: 4.7</p>
+                            <p>Contact Info: Phone: +1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+       
+    </main>
+
+    <footer class="text-center mt-20 bg-custom lg:-mb-6">
+        <section>
+            <h3 class="text-2xl font-bold text-white mt-4 mb-4">About this website</h3>
+            <p class="text-sm">This website is made as part of a project Fundamental of Software Engineering Course.<br> It
+                is envisaged by
+                a group of students who wanted to impact our country's education system in a positive way</p>
+        </section>
+        <div class="flex sm:justify-between mt-4 mb-4 ">
+            <div class="flex-1">
+            <a href="#" class="">
+              <em class="fab fa-google text-white text-4xl"></em>
+            </a>
+            </div>
+            <div class="flex-1">
+            <a href="#" class="">
+              <em class="fab fa-github text-white text-4xl"></em>
+            </a>
+            </div>
+            <div class="flex-1">
+            <a href="#" class="">
+              <em class="fab fa-facebook text-white text-4xl"></em>
+            </a>
+            </div>
+          </div>
+          <p class="mt-2 text-white "><span>© </span>Memariya Education Solutions, 2023</p>
+    </footer>
+</body>
+
+</html>
