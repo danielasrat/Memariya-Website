@@ -1,41 +1,76 @@
-const loginButton = document.getElementById("signIn");
-const inputEmail = document.getElementById("username");
-const inputPassword = document.getElementById("password");
-const role = document.querySelector('input[name="role"]:checked').value;
-
-async function loginUser(email, password, role) {
-    const loginEndpoint = "http://localhost:3000/api/v1/auth/login";
-
+function getTokenInfo(token) {
     try {
-        const response = await fetch(loginEndpoint, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                email: email,
-                password: password,
-                role: role
-            }),
-        });
-        console.log(response)
-
-        if (!response.ok) {
-            throw new Error("Network response was not ok");
+        const actualToken = token.split(' ')[1];
+        
+        const tokenPayload = JSON.parse(atob(actualToken.split('.')[1]));
+        
+        if (tokenPayload.exp && tokenPayload.role) {
+            const expirationDate = new Date(tokenPayload.exp * 1000);
+            const role = tokenPayload.role;
+            return [expirationDate, role];
         }
-        console.log("dhghgohg", response);
-        const data = await response.json();
-        const token = data.token;
-        localStorage.setItem("token", token);
-
-        window.location.href = "dashboard.html";
-
     } catch (error) {
-        alert("Error during login:", error.message);
+        console.log('Error parsing token:', error);
+    }
+    return [null, null];
+}
+
+const token = localStorage.getItem('token');
+if (token) {
+    const [expirationDate, role] = getTokenInfo(token);
+    if (expirationDate && expirationDate > new Date()) {
+        
+        if (role === 'Student') {
+            window.location.href = "../Html/dashboard-student.html";
+        } else {
+            window.location.href = "../Html/dashboard-instructor.html";
+        }
     }
 }
 
-loginButton.addEventListener("click", () => {
-    console.log("Email", inputEmail.value, "Password", inputPassword.value);
-    loginUser(inputEmail.value, inputPassword.value, role);
-});
+const button = document.getElementById('signIn');
+button.addEventListener('click', login);
+
+// Login function
+async function login(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const role = document.querySelector('input[name="role"]:checked').value;
+
+    try {
+        const endPoint = "http://localhost:3000/api/v1/auth/login";
+        const response = await fetch(endPoint, {
+            method: 'POST',
+            body: JSON.stringify({
+                email,
+                password,
+                role
+            }),
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8',
+            },
+        });
+        
+        const data = await response.json();
+        if (response.status === 200) {
+            localStorage.setItem('token', `Bearer ${data.token}`);
+
+            if (role === "Student") {
+                window.location.href = "../Html/dashboard-student.html";
+            } else {
+                window.location.href = "../Html/dashboard-instructor.html";
+            }
+        }
+    } catch (error) {
+        if (error instanceof TypeError && error.message.includes('Network request failed')) {
+            alert('Network error. Please check your internet connection.');
+        } else {
+            const errorMessage = error.message || 'An unknown error occurred.';
+            alert(`Please carefully enter your credentials.`);
+        }
+        window.location.href = '../login.html';
+    }
+    
+}
