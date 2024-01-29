@@ -33,10 +33,10 @@ const getAllInstructors = async (req, res) => {
     }
     // filtered = filtered ? filtered : instructors;
     filtered = filtered.map(instructor => {
-        const { name, bio, email, rating } = instructor
+        const { name, bio, email, rating, hourlyRate } = instructor
         const len = Object.keys(rating.users).length || 1
         const rate = rating.count/len
-        return {name, bio, email,rate}
+        return {name, bio, email,rate, hourlyRate}
     })
     filtered.sort((instructorA, instructorB) => instructorB.rate - instructorA.rate);
     

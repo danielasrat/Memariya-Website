@@ -54,5 +54,5 @@ const start = async () => {
       console.log(error);
     }
 };
-app.enable
+
 start()  

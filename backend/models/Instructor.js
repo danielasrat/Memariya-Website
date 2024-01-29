@@ -41,6 +41,10 @@ const TutorSchema = new mongoose.Schema({
             count:0
         }
     },
+    hourlyRate: {
+        type: Number,
+        default: 10
+    },
     courses: {
         type: [BadgeSchema],
         default: []        

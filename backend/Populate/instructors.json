@@ -5,6 +5,7 @@
         "name": "test",
         "email": "eba00@gmail.com",
         "password": "123456",
+        "hourlyRate": 25,
         "rating": {
             "count": 14,
             "users": {
@@ -38,6 +39,7 @@
         "name": "test",
         "email": "eba01@gmail.com",
         "password": "123456",
+        "hourlyRate": 15,
         "rating": {
             "count": 6,
             "users": {
@@ -64,6 +66,7 @@
         "name": "test",
         "email": "eba02@gmail.com",
         "password": "123456",
+        "hourlyRate": 10,
         "rating": {
             "count": 5,
             "users": {
@@ -90,6 +93,8 @@
         "name": "test",
         "email": "eba03@gmail.com",
         "password": "123456",
+        "hourlyRate": 31,
+
         "rating": {
             "count": 0,
             "users": {}
@@ -108,6 +113,7 @@
         "name": "test",
         "email": "eba04@gmail.com",
         "password": "123456",
+        "hourlyRate": 18,
         "rating": {
             "count": 11,
             "users": {
@@ -140,6 +146,7 @@
         "name": "test",
         "email": "eba05@gmail.com",
         "password": "123456",
+        "hourlyRate": 14,
         "rating": {
             "count": 5,
             "users": {
@@ -170,6 +177,7 @@
         "name": "test",
         "email": "eba06@gmail.com",
         "password": "123456",
+        "hourlyRate": 20,
         "rating": {
             "count": 1,
             "users": {
@@ -196,6 +204,7 @@
         "name": "test",
         "email": "eba07@gmail.com",
         "password": "123456",
+        "hourlyRate": 30,
         "rating": {
             "count": 6,
             "users": {
@@ -223,6 +232,7 @@
         "name": "test",
         "email": "eba08@gmail.com",
         "password": "123456",
+        "hourlyRate": 15,
         "rating": {
             "count": 8,
             "users": {
@@ -255,6 +265,7 @@
         "name": "test",
         "email": "eba09@gmail.com",
         "password": "123456",
+        "hourlyRate": 27,
         "rating": {
             "count": 3,
             "users": {
@@ -281,6 +292,7 @@
         "name": "test",
         "email": "eba10@gmail.com",
         "password": "123456",
+        "hourlyRate": 10,
         "rating": {
             "count": 13,
             "users": {
