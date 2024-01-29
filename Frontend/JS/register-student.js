@@ -24,7 +24,7 @@ async function signupUser(name, email, password) {
     }
 
     console.log("Signup successful! Redirecting to login page.");
-    window.location.href = "dashboard-instructor.html"; // Redirect to the login page
+    window.location.href = "../Html/dashboard-instructor.html"; // Redirect to the login page
   } catch (error) {
     console.error("Error during signup:", error.message);
     alert("Signup failed. Please try again."); // Display an error message
@@ -36,6 +36,6 @@ signupButton.addEventListener("click", (event) => {
   const inputName = document.getElementById("name");
   const inputEmail = document.getElementById("email");
   const inputPassword = document.getElementById("passwordinput");
-  console.log("clicked",inputName.value, inputEmail.value, inputPassword.value);
+  console.log("clicked", inputName.value, inputEmail.value, inputPassword.value);
   signupUser(inputName.value, inputEmail.value, inputPassword.value);
 });
