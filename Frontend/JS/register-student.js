@@ -1,9 +1,8 @@
 const signupButton = document.getElementById("signup");
-const inputName = document.getElementById("name");
-const inputEmail = document.getElementById("email");
-const inputPassword = document.getElementById("passwordInput");
+
 
 async function signupUser(name, email, password) {
+
   const signupEndpoint = "http://localhost:3000/api/v1/auth/register";
 
   try {
@@ -32,7 +31,11 @@ async function signupUser(name, email, password) {
   }
 }
 
-signupButton.addEventListener("click", () => {
-  console.log("clicked");
+signupButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  const inputName = document.getElementById("name");
+  const inputEmail = document.getElementById("email");
+  const inputPassword = document.getElementById("passwordinput");
+  console.log("clicked",inputName.value, inputEmail.value, inputPassword.value);
   signupUser(inputName.value, inputEmail.value, inputPassword.value);
 });

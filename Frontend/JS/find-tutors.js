@@ -20,16 +20,19 @@ displayTutorsBtn.addEventListener('click', async (event) => {
                 throw new Error(data.msg);
             }
             const tutors = data.map(tutor => {
-                return `<div class="flex items-center">
-                <div class="w-16 h-16 bg-black mr-4 rounded-full"></div>
-                <div class="ml-20">
-                    <h3 class="text-lg font-bold">${tutor.name}</h3>
-                    <p>Expertise: ${selectedCourse}</p>
-                    <p>Username: ${tutor.name}</p>
-                    <p>Average Rating: ${tutor.rate.toFixed(1)}</p>
-                    <p>Contact Info: Email: <a href= 'mailto:${tutor.email}'>${tutor.email}</a></p>
+                return `
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="fas fa-user text-black text-3xl w-1"></div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-bold">${tutor.name}</h3>
+                        <div>Expertise: ${selectedCourse}</div>
+                        <div>Bio: ${tutor.bio}</div>
+                        <div>Average Rating: ${tutor.rate.toFixed(1)}</div>
+                        <div>Hourly Rate: ${tutor.hourlyRate}$</div>
+                        <div>Contact Info: Email: <a href='mailto:${tutor.email}'>${tutor.email}</a></div>
+                    </div>
                 </div>
-            </div>
+
             `
             });
             tutorsContainer.innerHTML = tutors.join('');
