@@ -1,71 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instructors' log-in</title>
     <link rel="stylesheet" href="../CSS/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iKz6P/lLFI+O9R3LkBE5f9QrNf8bP9Y9yPZbY2bsPbSBExl/21H7uRTt" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-GLhlTQ8iKz6P/lLFI+O9R3LkBE5f9QrNf8bP9Y9yPZbY2bsPbSBExl/21H7uRTt" crossorigin="anonymous">
+    <script src=""></script>
 </head>
+
 <body>
     <div class="container flex flex-col md:flex-row h-screen">
         <div class="flex-1 h-screen md:h-screen ">
             <div class=" lg:w-96 lg:m-auto lg:mt-20 lg:ml-40 md:mt-24 md:ml-2 mt-4 ml-2">
                 <form>
-                    <h2 class="text-4xl font-bold mb-4 text-customed text-center lg:mt-4 lg:mb-8">Sign-in to <br> Memariya.com </h2>
-                    
+                    <h2 class="text-4xl font-bold mb-4 text-customed text-center lg:mt-4 lg:mb-8">Sign-in to <br>
+                        Memariya.com </h2>
+                    <div id="role">
+                        <p>Log In as:</p>
+                        <input type="radio" id="student" name="role" value="Student">
+                        <label for="Student">Student</label><br>
+                        <input type="radio" id="instructor" name="role" value="Instructor">
+                        <label for="Instructor">Instructor</label><br>
+                    </div>
+
+
                     <div class="mb-4">
                         <label class="block text-customed font-bold">E-mail:</label>
-                        <input type="text" placeholder="Username" class="border-2 border-customed">
+                        <input type="text" placeholder="Email" id="username" class="border-2 border-customed">
                     </div>
                     <div class="mb-8 relative">
                         <label class="block text-customed font-bold">Password:</label>
                         <div class="flex items-center">
-                            <input type="password" id="passwordInput" placeholder="Enter your password" class="border-2 border-customed">
-                            <i class=" toggle-password cursor-pointer absolute top-9 transform -translate-y-1/2 left-40 fas fa-eye text-customed" onclick="togglePassword()"></i>
+                            <input type="password" id="password" placeholder="Enter your password"
+                                class="border-2 border-customed">
+                            <i class=" toggle-password cursor-pointer absolute top-9 transform -translate-y-1/2 left-40 fas fa-eye text-customed"
+                                onclick="togglePassword()"></i>
                         </div>
                     </div>
-                   <p class="italic text-right text-customed lg:mb-4"><a href="#" class="">Forgot my password?</a></p>
-                   <div class="">
-                    <button type="submit" class="bg-customed text-white px-8 py-2 rounded-full text-lg mt-4 text-center">Sign In</button>
+                    <p class="italic text-right text-customed lg:mb-4"><a href="#" class="">Forgot my password?</a></p>
+                    <div class="">
+                        <button type="submit"
+                            class="bg-customed text-white px-8 py-2 rounded-full text-lg mt-4 text-center"
+                            id="signIn">Sign In</button>
                     </div>
-                   <div class="flex justify-between mt-4 lg:mt-10 mb-4">
-                    <div class="flex-1">
-                    <a href="#" class="">
-                      <em class="fab fa-google text-3xl text-customed"></em>
-                    </a>
+                    <div class="flex justify-between mt-4 lg:mt-10 mb-4">
+                        <div class="flex-1">
+                            <a href="#" class="">
+                                <em class="fab fa-google text-3xl text-customed"></em>
+                            </a>
+                        </div>
+                        <div class="flex-1">
+                            <a href="#" class="">
+                                <em class="fab fa-github text-3xl text-customed"></em>
+                            </a>
+                        </div>
+                        <div class="flex">
+                            <a href="#" class="">
+                                <em class="fab fa-facebook text-3xl text-customed"></em>
+                            </a>
+                        </div>
                     </div>
-                    <div class="flex-1">
-                    <a href="#" class="">
-                      <em class="fab fa-github text-3xl text-customed"></em>
-                    </a>
+                    <div class="text-black lg:mt-10 font-semibold">
+                        You do not have an account yet? <a href="#" class="text-customed lg:ml-16 text-lg md:ml-10">Sign
+                            up</a>
                     </div>
-                    <div class="flex">
-                    <a href="#" class="">
-                      <em class="fab fa-facebook text-3xl text-customed"></em>
-                    </a>
-                    </div>
-                  </div>
-                  <div class="text-black lg:mt-10 font-semibold">
-                   You do not have an account yet? <a href="#" class="text-customed lg:ml-16 text-lg md:ml-10">Sign up</a>
-                  </div>
-                   
+
                 </form>
             </div>
         </div>
-    <div class="flex-1 h-screen order-first md:order-first bg-customed md:h-screen">
-        <div class="lg:mt-40 md:mt-40">
-            <img src="../Designs/Logo/memariyacom-logos_transparent.png" alt="Logo of memariya.com" class="">
-        </div>
+        <div class="flex-1 h-screen order-first md:order-first bg-customed md:h-screen">
+            <div class="lg:mt-40 md:mt-40">
+                <img src="../Designs/Logo/memariyacom-logos_transparent.png" alt="Logo of memariya.com" class="">
+            </div>
             <div class="font-serif mb-10">
                 <p class="text-white text-4xl font-bold text-center font-poiret">Hub of personalized learning</p>
             </div>
         </div>
     </div>
-    
- <script src="../script/script.js"></script>   
+
+    <script src="../script/script.js"></script>
 </body>
+
 </html>
