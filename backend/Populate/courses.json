@@ -1,0 +1,65 @@
+[
+    {
+        "id" : 0,
+        "name": "Python",
+        "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Beginner",
+        "resource": "https://www.python.org/"
+    },
+    {
+        "id" : 1,
+        "name": "Python",
+        "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Intermediate",
+        "resource": "https://www.python.org/"
+    },
+    {
+        "id" : 2,
+        "name": "Python",
+        "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Advanced",
+        "resource": "https://www.python.org/"
+    },
+    {
+        "id" : 3,
+        "name": "JavaScript",
+        "description": "JavaScript is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Beginner",
+        "resource": "https://www.JavaScript.org/"
+    },
+    {
+        "id" : 4,
+        "name": "JavaScript",
+        "description": "JavaScript is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Intermediate",
+        "resource": "https://www.JavaScript.org/"
+    },
+    {
+        "id" : 5,
+        "name": "JavaScript",
+        "description": "JavaScript is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Advanced",
+        "resource": "https://www.JavaScript.org/"
+    },
+    {
+        "id" : 6,
+        "name": "Html",
+        "description": "Html is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Beginner",
+        "resource": "https://www.Html.org/"
+    },
+    {
+        "id" : 7,
+        "name": "Html",
+        "description": "Html is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Intermediate",
+        "resource": "https://www.Html.org/"
+    },
+    {
+        "id" : 8,
+        "name": "Html",
+        "description": "Html is a programming language that lets you work quickly and integrate systems more effectively.",
+        "level": "Advanced",
+        "resource": "https://www.Html.org/"
+    }
+]

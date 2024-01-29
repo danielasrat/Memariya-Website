@@ -1,0 +1,107 @@
+[
+    {
+        "id": 0,
+        "milestone":1,
+        "level":"Beginner",
+        "answer":[0,0,1],
+        "questions":[
+            {
+                "question":"What is the python function to output in terminal?",
+                "choice":[
+                    "print()",
+                    "output()",
+                    "terminal()",
+                    "printline()"
+                ]
+            },
+            {
+                "question":"What is the first index in array?",
+                "choice":[
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "question":"Whaat is the output of the print(4**2)?",
+                "choice":[
+                    "8",
+                    "16",
+                    "4",
+                    "2"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "milestone":2,
+        "level":"Beginner",
+        "answer":[0,0,1],
+        "questions":[
+            {
+                "question":"What is the python function to output in terminal?",
+                "choice":[
+                    "print()",
+                    "output()",
+                    "terminal()",
+                    "printline()"
+                ]
+            },
+            {
+                "question":"What is the first index in array?",
+                "choice":[
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "question":"Whaat is the output of the print(4**2)?",
+                "choice":[
+                    "8",
+                    "16",
+                    "4",
+                    "2"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "milestone":3,
+        "level":"Beginner",
+        "answer":[0,0,1],
+        "questions":[
+            {
+                "question":"What is the python function to output in terminal?",
+                "choice":[
+                    "print()",
+                    "output()",
+                    "terminal()",
+                    "printline()"
+                ]
+            },
+            {
+                "question":"What is the first index in array?",
+                "choice":[
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "question":"Whaat is the output of the print(4**2)?",
+                "choice":[
+                    "8",
+                    "16",
+                    "4",
+                    "2"
+                ]
+            }
+        ]
+    }
+]

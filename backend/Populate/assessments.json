@@ -1,0 +1,118 @@
+[
+    {
+      "name":"Python",
+      "answer": [0, 0, 1, 0, 0, 1,0, 0, 1, 3, 0, 0],
+      "questions": [
+        {
+          "question": "What is the python function to output in the terminal?",
+          "choice": [
+            "print()",
+            "output()",
+            "terminal()",
+            "printline()"
+          ]
+        },
+        {
+          "question": "What is the first index in an array?",
+          "choice": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "question": "What is the output of the print(4**2)?",
+          "choice": [
+            "8",
+            "16",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "question": "How do you comment a single line in Python?",
+          "choice": [
+            "# Single-line comment",
+            "// Single-line comment",
+            "/* Single-line comment */",
+            "-- Single-line comment"
+          ]
+        },
+        {
+          "question": "What does the 'len()' function do in Python?",
+          "choice": [
+            "Returns the length of a string",
+            "Converts a string to lowercase",
+            "Calculates the absolute value of a number",
+            "Generates a random number"
+          ]
+        },
+        {
+          "question": "What is the purpose of the 'elif' keyword in an if-else statement?",
+          "choice": [
+            "Used for error handling",
+            "Executed if the 'if' condition is false",
+            "Indicates the end of the statement",
+            "Defines a loop"
+          ]
+        },
+        {
+          "question": "What does the 'in' keyword do in Python?",
+          "choice": [
+            "Checks if a value is present in a list",
+            "Declares a variable",
+            "Defines a function",
+            "Performs mathematical multiplication"
+          ]
+        },
+        {
+          "question": "What is the purpose of the 'elif' keyword in an if-else statement?",
+          "choice": [
+            "It is used to introduce an alternative condition that is checked if the preceding conditions are False",
+            "Executed if the 'if' condition is false",
+            "Indicates the end of the statement",
+            "Defines a loop"
+          ]
+        },
+        {
+          "question": "What is the result of '10 % 3' in Python?",
+          "choice": [
+            "3",
+            "1",
+            "0",
+            "10"
+          ]
+        },
+        {
+          "question": "How do you open a file in Python?",
+          "choice": [
+            "openFile()",
+            "readFile()",
+            "file.open()",
+            "with open()"
+          ]
+        },
+        {
+          "question": "What is the purpose of the 'lambda' keyword in Python?",
+          "choice": [
+            "Defines anonymous functions",
+            "Creates class instances",
+            "Handles exceptions",
+            "Imports external modules"
+          ]
+        },
+        {
+          "question": "What does the 'pop()' method do in Python?",
+          "choice": [
+            "Removes the last element from a list",
+            "Adds an element to the end of a list",
+            "Deletes a specified element from a list",
+            "Sorts the elements of a list"
+          ]
+        }
+      ]
+    }
+
+  ]
+  

@@ -1,0 +1,210 @@
+
+### Use Postman to test the endpoints ###
+
+## -------Auth------##
+
+# register
+### Inistructor ###
+POST http://localhost:3000/api/v1/auth/register
+    Content-Type: application/json
+    
+    {
+        "name":"test",
+        "email":"eba00@gmail.com",
+        "password":"0992ixnc",
+        "role":"Instructor"
+    }
+
+
+### Student ###
+POST http://localhost:3000/api/v1/auth/register 
+    Content-Type: application/json
+    
+    {
+        "name":"test",
+        "email":"eba00@gmail.com",
+        "password":"0992ixnc",
+        "role":"Student"
+    }
+
+
+# Login
+### Inistructor ###
+POST http://localhost:3000/api/v1/auth/login
+    Content-Type: application/json
+
+    {
+        "email":"eba00@gmail.com",
+        "password":"0992ixnc",
+        "role":"Instructor"
+    }
+
+
+### Student ###
+POST http://localhost:3000/api/v1/auth/login 
+    Content-Type: application/json
+
+    {
+        "email":"eba00@gmail.com",
+        "password":"0992ixnc",
+        "role":"Student"
+    }
+
+
+
+## --------Courses-----##
+
+### Get all courses ###
+GET http://localhost:3000/api/v1/courses/ 
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDU2NTczODEsImV4cCI6MTcwODI0OTM4MX0.NL5qClzKvPKyiCeN_otTMikQiBfmC_SL_YXiD8B-NxQ
+
+### Get single course ###
+#use the id of the course
+GET http://localhost:3000/api/v1/courses/2 
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDU2NTczODEsImV4cCI6MTcwODI0OTM4MX0.NL5qClzKvPKyiCeN_otTMikQiBfmC_SL_YXiD8B-NxQ
+
+
+## --------Students-----##
+
+### Get all students ###
+GET http://localhost:3000/api/v1/students/
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDU2NTczODEsImV4cCI6MTcwODI0OTM4MX0.NL5qClzKvPKyiCeN_otTMikQiBfmC_SL_YXiD8B-NxQ
+
+### update student ###
+# PATCH http://localhost:3000/api/v1/students/id
+#use the id of the student
+
+PATCH http://localhost:3000/api/v1/students/1
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDU2NTczODEsImV4cCI6MTcwODI0OTM4MX0.NL5qClzKvPKyiCeN_otTMikQiBfmC_SL_YXiD8B-NxQ
+    
+    {
+        "premium":true
+    }
+
+### Get all courses of student ###
+#GET http://localhost:3000/api/v1/students/id/courses/
+#use the id of the student  
+
+GET http://localhost:3000/api/v1/students/1/courses/
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDU2NTczODEsImV4cCI6MTcwODI0OTM4MX0.NL5qClzKvPKyiCeN_otTMikQiBfmC_SL_YXiD8B-NxQ
+
+### Add course to student ###
+# POST http://localhost:3000/api/v1/students/id/courses
+#use the id of the student  
+POST http://localhost:3000/api/v1/students/1/courses/
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDU2NTczODEsImV4cCI6MTcwODI0OTM4MX0.NL5qClzKvPKyiCeN_otTMikQiBfmC_SL_YXiD8B-NxQ
+
+    {
+        "name": "Python",
+        "id" : 0,
+        "level": "Beginner"
+    }
+
+### Delete course from student ###
+# DELETE http://localhost:3000/api/v1/students/studentid/courses/courseid
+#use the id of the student and the id of the course
+DELETE http://localhost:3000/api/v1/students/1/courses/0
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDU2NTczODEsImV4cCI6MTcwODI0OTM4MX0.NL5qClzKvPKyiCeN_otTMikQiBfmC_SL_YXiD8B-NxQ
+
+
+## --------Instructors-----##
+### Get all instructors ###
+GET http://localhost:3000/api/v1/instructors
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+### update instructor ###
+# PATCH http://localhost:3000/api/v1/instructors/id
+#use the id of the instructor
+PATCH http://localhost:3000/api/v1/instructors/1
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+    {
+        "name":"test"
+    }
+
+### Get all courses of instructor ###
+#GET http://localhost:3000/api/v1/instructors/id/courses/
+#use the id of the instructor
+GET http://localhost:3000/api/v1/instructors/1/courses/
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+### Add course to instructor ###
+# POST http://localhost:3000/api/v1/instructors/id/courses
+POST http://localhost:3000/api/v1/instructors/1/courses/
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+    {
+        "name": "Python",
+        "id" : 0,
+        "level": "Beginner"
+    }
+
+### Delete course from instructor ###
+# DELETE http://localhost:3000/api/v1/instructors/instructorid/courses/courseid
+#use the id of the instructor and the id of the course
+DELETE http://localhost:3000/api/v1/instructors/1/courses/0
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+## --------Quizzes-----##
+### getQuiz ###
+# GET http://localhost:3000/api/v1/quizzes?courseId=0&milestone=1
+
+GET http://localhost:3000/api/v1/quizzes?courseId=0&milestone=1
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+### get Quiz Score ###
+# GET http://localhost:3000/api/v1/quizzes?courseId=0&milestone=1
+Post http://localhost:3000/api/v1/quizzes?courseId=0&milestone=1
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+    {
+        "answer":[0,0,1]
+    }
+
+##--------Finals-----##
+### getFinal ###
+# GET http://localhost:3000/api/v1/finals/courseId
+GET http://localhost:3000/api/v1/finals/0
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+### get Final Score ###
+POST http://localhost:3000/api/v1/finals/0
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+    {
+        "answer":[0,0,1,0,0,1,0,0,1]
+    }
+
+##--------Assessment-----##
+### getAssessment ###
+# GET http://localhost:3000/api/v1/assessments/courseId
+GET http://localhost:3000/api/v1/assessments/0
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+### get Assessment Score ###
+# POST http://localhost:3000/api/v1/assessments/courseId
+
+POST http://localhost:3000/api/v1/assessments/0
+    Content-Type: application/json
+    authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QiLCJpYXQiOjE3MDYzMjUwMjQsImV4cCI6MTcwODkxNzAyNH0.KFHwtomc9kC91jVhzmTkxBkNvUdWzyGN5ohvlz0XjeU
+
+    {
+        "answer":[0,0,1,0,0,1]
+    }

@@ -1,0 +1,310 @@
+[
+    {
+        "id": 0,
+        "bio": "",
+        "name": "test",
+        "email": "eba00@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 14,
+            "users": {
+                "0": 2,
+                "1": 4,
+                "2": 5,
+                "3": 3
+            }
+        },
+        "courses": [
+            {
+                "id": 0,
+                "name": "Python",
+                "level": "Beginner"
+            },
+            {
+                "id": 1,
+                "name": "Python",
+                "level": "Intermediate"
+            },
+            {
+                "id": 3,
+                "name": "JavaScript",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "bio": "",
+        "name": "test",
+        "email": "eba01@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 6,
+            "users": {
+                "0": 2,
+                "1": 4
+            }
+        },
+        "courses": [
+            {
+                "id": 3,
+                "name": "Python",
+                "level": "Advanced"
+            },
+            {
+                "id": 5,
+                "name": "JavaScript",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "bio": "",
+        "name": "test",
+        "email": "eba02@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 5,
+            "users": {
+                "0": 1,
+                "1": 4
+            }
+        },
+        "courses": [
+            {
+                "id": 7,
+                "name": "Html",
+                "level": "Intermediate"
+            },
+            {
+                "id": 0,
+                "name": "Python",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "bio": "",
+        "name": "test",
+        "email": "eba03@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 0,
+            "users": {}
+        },
+        "courses": [
+            {
+                "id": 6,
+                "name": "Html",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "bio": "",
+        "name": "test",
+        "email": "eba04@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 11,
+            "users": {
+                "0": 4,
+                "1": 4,
+                "2": 3
+            }
+        },
+        "courses": [
+            {
+                "id" : 3,
+                "name": "JavaScript",
+                "level": "Beginner"
+            },
+            {
+                "id" : 4,
+                "name": "JavaScript",
+                "level": "Intermediate"
+            },
+            {
+                "id" : 5,
+                "name": "JavaScript",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "bio": "",
+        "name": "test",
+        "email": "eba05@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 5,
+            "users": {
+                "1": 4
+            }
+        },
+        "courses": [
+            {
+                "id" : 6,
+                "name": "Html",
+                "level": "Beginner"
+            },
+            {
+                "id" : 7,
+                "name": "Html",
+                "level": "Intermediate"
+            },
+            {
+                "id" : 8,
+                "name": "Html",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "bio": "",
+        "name": "test",
+        "email": "eba06@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 1,
+            "users": {
+                "0": 1
+            }
+        },
+        "courses": [
+            
+            {
+                "id" : 7,
+                "name": "Html",
+                "level": "Intermediate"
+            },
+            {
+                "id" : 8,
+                "name": "Html",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "bio": "",
+        "name": "test",
+        "email": "eba07@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 6,
+            "users": {
+                "0": 2,
+                "1": 3,
+                "2": 1
+            }
+        },
+        "courses": [
+            {
+                "id" : 2,
+                "name": "Python",
+                "level": "Advanced"
+            },
+            {
+                "id" : 5,
+                "name": "JavaScript",
+                "level": "Advanced"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "bio": "",
+        "name": "test",
+        "email": "eba08@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 8,
+            "users": {
+                "0": 4,
+                "1": 4
+            }
+        },
+        "courses": [
+            {
+                "id" : 4,
+                "name": "JavaScript",
+                "level": "Intermediate"
+            },
+            {
+                "id" : 7,
+                "name": "Html",
+                "level": "Intermediate"
+            },
+            {
+                "id" : 8,
+                "name": "Html",
+                "level": "Advanced"
+            }
+
+        ]
+    },
+    {
+        "id": 9,
+        "bio": "",
+        "name": "test",
+        "email": "eba09@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 3,
+            "users": {
+                "0": 2,
+                "1": 1
+            }
+        },
+        "courses": [
+            {
+                "id" : 7,
+                "name": "Html",
+                "level": "Intermediate"
+            },
+            {
+                "id" : 4,
+                "name": "JavaScript",
+                "level": "Intermediate"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "bio": "",
+        "name": "test",
+        "email": "eba10@gmail.com",
+        "password": "123456",
+        "rating": {
+            "count": 13,
+            "users": {
+                "0": 4,
+                "1": 5,
+                "2": 4
+            }
+        },
+        "courses": [
+            {
+                "id" : 2,
+                "name": "Python",
+                "level": "Advanced"
+            },
+            {
+                "id" : 5,
+                "name": "JavaScript",
+                "level": "Advanced"
+            },
+            {
+                "id" : 8,
+                "name": "Html",
+                "level": "Advanced"
+            }
+        ]
+    }
+]

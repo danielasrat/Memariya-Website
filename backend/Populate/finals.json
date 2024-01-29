@@ -1,0 +1,91 @@
+[
+    {
+        "id":0,
+        "answer":[0,0,1,0,0,1,0,0,1],
+        "questions":[
+            {
+                "question":"What is the python function to output in terminal?",
+                "choice":[
+                    "print()",
+                    "output()",
+                    "terminal()",
+                    "printline()"
+                ]
+            },
+            {
+                "question":"What is the first index in array?",
+                "choice":[
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "question":"Whaat is the output of the print(4**2)?",
+                "choice":[
+                    "8",
+                    "16",
+                    "4",
+                    "2"
+                ]
+            },
+            {
+                "question":"What is the python function to output in terminal?",
+                "choice":[
+                    "print()",
+                    "output()",
+                    "terminal()",
+                    "printline()"
+                ]
+            },
+            {
+                "question":"What is the first index in array?",
+                "choice":[
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "question":"Whaat is the output of the print(4**2)?",
+                "choice":[
+                    "8",
+                    "16",
+                    "4",
+                    "2"
+                ]
+            },
+            {
+                "question":"What is the python function to output in terminal?",
+                "choice":[
+                    "print()",
+                    "output()",
+                    "terminal()",
+                    "printline()"
+                ]
+            },
+            {
+                "question":"What is the first index in array?",
+                "choice":[
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "question":"Whaat is the output of the print(4**2)?",
+                "choice":[
+                    "8",
+                    "16",
+                    "4",
+                    "2"
+                ]
+            }
+        ]
+
+
+    }
+]
