@@ -40,7 +40,7 @@ const getAllInstructors = async (req, res) => {
     })
     filtered.sort((instructorA, instructorB) => instructorB.rate - instructorA.rate);
     
-    res.status(StatusCodes.OK).json({ instructors:filtered, nbHits: filtered.length })
+    res.status(StatusCodes.OK).json(filtered)
 }
 
 const updateInstructor = async (req, res) => { 
