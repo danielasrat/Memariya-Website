@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Dashboard</title>
+   <link rel="stylesheet" href="../css/student1.css">
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head> 
+<body>
+    <header> 
+        <nav class="bg-custom">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+                <div class="flex justify-between items-center">
+                    <div class="flex-shrink-0">
+                        <img class="h-24" src="../logo/memariyacom-logos_transparent.png" alt="Your Company">
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Home</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Dashboard</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
+                            aria-current="page">Courses</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Quizzes</a>
+                        <a href="#"
+                            class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Find
+                            Tutors</a>
+                    </div>
+                    <div class="md:hidden">
+                        <!-- Mobile menu button -->
+                        <button type="button"
+                            class="text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Hamburger icon -->
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium"
+                        aria-current="page">Home</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Dashboard</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Courses</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Quizzes</a>
+                    <a href="#"
+                        class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Find
+                        Tutors</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="flex flex-col md:flex-row">
+        <div class="mb-20 mt-20 items-center ml-4 flex-1 " >
+            <div class="w-16 h-16 mr-4 rounded-full">
+              <img src="../images/user-jhon.png" alt="Photo of John" class="w-20">
+            </div>
+            <div class="">
+                <h3 class="text-xl font-bold text-custom mb-2">John Doe</h3>
+                <p><em class="font-bold">Profile</em>: Student</p>
+                <p><em class="font-bold">Username</em>: John1234</p>
+            </div>
+        </div>
+        <div class="ml-4 mt-20 flex-1">
+            <div class="mb-4">
+              <p class="text-xl">Your current progress is on python beginner</p>
+
+            </div>
+            <p class="text-custom"> 30% Complete</p>
+            <div class="bg-gray-300 h-5 w-64 relative rounded-full overflow-hidden">
+             
+              <div class="bg-custom h-8 w-1/3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:text-2xl font-semibold text-lg mt-20 text-center">
+        <h1>Expand Your skills by taking these memariya.com's expert curated contents to fit you courses</h1>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+                
+        <div class="bg-custom p-6 rounded-lg shadow-md " id="card-1">
+            <img src="../images/java.png" alt="Picture of JAVA" class="mb-4 rounded-md bg-custom">
+            <h2 class="text-4xl font-bold mb-4 text-black">Java</h2>
+            <p class="text-white">
+              Java is a widely used programming language known for its platform independence, strong community support, and applications in web development, mobile (Android), and enterprise software.</p>
+           
+            <button class="mt-8">
+              <a href="#" class="hover:text-white mt-10">Learn Java</a>
+            </button>
+        </div>
+        <div class="bg-custom p-6 rounded-lg shadow-md " id="card-2">
+            <img src="../images/python.png" alt="Picture of PYTHON" class="mb-4 rounded-md bg-custom">
+            <h2 class="text-4xl font-bold mb-4 text-black">Python</h2>
+            <p class="text-white ">  
+              Python is a versatile and high-level programming language known for its readability and simplicity, facilitating rapid development across diverse applications, from web development to data science and artificial intelligence. </p>
+              <button class="">
+                <a href="#" class="hover:text-blue mt-4 text-center">Learn Python</a>
+              </button>  </div>
+        <div class="bg-custom p-6 rounded-lg shadow-md " id="card-3">
+            <img src="../images/Javascript image.png" alt="Picture of JAVA" class="mb-4 rounded-md bg-custom">
+            <h2 class="text-4xl font-bold mb-4 text-black">JavaScript</h2>
+            <p class="text-white ">
+              JavaScript is a versatile, high-level scripting language predominantly used for web development, facilitating dynamic and interactive content creation. Its client-side capabilities and server-side expansion through Node.js make it integral to modern full-stack application development.</p>
+              <button class="text-blue-500 hover:underline focus:outline-none">
+                <a href="#" class="hover:text-white text-center">Learn JavaScript</a>
+              </button></div>
+
+
+        
+    </main>
+      
+        <footer class="text-center mt-20 bg-custom lg:-mb-6 w-full">
+            <section>
+                <h3 class="text-2xl font-bold text-white mt-4 mb-4">About this website</h3>
+                <p class="text-sm">This website is made as part of a project Fundamental of Software Engineering Course.<br> It
+                    is envisaged by
+                    a group of students who wanted to impact our country's education system in a positive way</p>
+            </section>
+            <div class="flex sm:justify-between mt-4 mb-4 ">
+                <div class="flex-1">
+                <a href="#" class="">
+                  <em class="fab fa-google text-white text-4xl"></em>
+                </a>
+                </div>
+                <div class="flex-1">
+                <a href="#" class="">
+                  <em class="fab fa-github text-white text-4xl"></em>
+                </a>
+                </div>
+                <div class="flex-1">
+                <a href="#" class="">
+                  <em class="fab fa-facebook text-white text-4xl"></em>
+                </a>
+                </div>
+              </div>
+              <p class="mt-2 text-white "><span>© </span>Memariya Education Solutions, 2023</p>
+        </footer>   
+  <script src="../javascript/script.js"></script>
+</body>
+</html>
