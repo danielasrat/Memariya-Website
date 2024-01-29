@@ -1,10 +1,10 @@
 const signupButton = document.getElementById("signup");
 const inputName = document.getElementById("name");
 const inputEmail = document.getElementById("email");
-const inputPassword = document.getElementById("password");
+const inputPassword = document.getElementById("passwordInput");
 
 async function signupUser(name, email, password) {
-  const signupEndpoint = "http://localhost:3000/auth/signup";
+  const signupEndpoint = "http://localhost:3000/api/v1/auth/register";
 
   try {
     const response = await fetch(signupEndpoint, {
@@ -16,6 +16,7 @@ async function signupUser(name, email, password) {
         name: name,
         email: email,
         password: password,
+        role: "Student"
       }),
     });
 
@@ -24,7 +25,7 @@ async function signupUser(name, email, password) {
     }
 
     console.log("Signup successful! Redirecting to login page.");
-    window.location.href = "login.html"; // Redirect to the login page
+    window.location.href = "dashboard-instructor.html"; // Redirect to the login page
   } catch (error) {
     console.error("Error during signup:", error.message);
     alert("Signup failed. Please try again."); // Display an error message
