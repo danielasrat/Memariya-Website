@@ -17,41 +17,37 @@
         <div class="flex-1 h-screen md:h-screen ">
             <div class=" lg:w-96 lg:m-auto lg:mt-8 lg:ml-40 md:mt-24 md:ml-2 mt-4 ml-10">
                 <form>
-                    <h2 class="text-4xl font-bold mb-4 text-customed text-center lg:mt-4 lg:mb-8">Create an account as
+                    <h2 class="text-4xl font-bold mb-4 text-customed lg:mt-4 lg:mb-8">Create an account as
                         an Instructor
                     </h2>
                     <div class="mb-4">
-                        <label class="block text-customed font-bold">Full name:</label>
-                        <input type="text" placeholder="Full name" id="name" class="border-2 border-customed ">
+                        <label class="block font-bold">Full name:</label>
+                        <input type="text" placeholder="Full name" id="name" class="rounded h-8 border">
                     </div>
-                    <div class="mb-4">
-                        <label class="block text-customed font-bold">E-mail:</label>
-                        <input type="text" placeholder="E-mail" id="email" class="border-2 border-customed ">
+                    <div class=" mb-4">
+                        <label class="block font-bold">E-mail:</label>
+                        <input type="text" placeholder="E-mail" id="email" class="rounded h-8 border">
                     </div>
+
                     <div class="mb-4 relative">
-                        <label class="block text-customed font-bold">Enter strong Password:</label>
+                        <label class="block font-bold">Set your password:</label>
                         <div class="flex items-center">
-                            <input type="password" placeholder="Enter your password" class="border-2 border-customed">
+                            <input type="password" id="passwordinput" placeholder="Set password"
+                                class="rounded h-8 border">
                         </div>
                     </div>
-                    <div class="mb-8 relative">
-                        <label class="block text-customed font-bold">Confirm your password:</label>
-                        <div class="flex items-center">
-                            <input type="password" id="passwordinput" placeholder="Confirm password"
-                                class="border-2 border-customed">
-                        </div>
+                    <div class="ml-16">
+                        <button type="submit" id="signup"
+                            class="bg-customed text-white px-8 py-2 rounded-full text-lg mt-4 text-center hover:bg-customdark">Sign
+                            Up</button>
                     </div>
-                    <p>Instructor account comes with fee!Details about instructor account
+                    <p class="font-bold mt-4">Instructor account comes with fee!Details about instructor account
                         are found <a href="#" class="text-customed"> Here</a>
                     </p>
                     <!-- <div class="mt-6">
                         <a href="#" class="bg-customed text-white px-2 rounded">Finish Payment</a>
                     </div> -->
-                    <div class="ml-20">
-                        <button type="submit" id="signup"
-                            class="bg-customed text-white px-8 py-2 rounded-full text-lg mt-4 text-center">Sign
-                            Up</button>
-                    </div>
+
                     <div class="mt-4 mb-10">
                         Already have an account?
                         <div class="ml-56 -mt-6"><a href="log-in.html" class="text-customed font-bold">Log in</a>

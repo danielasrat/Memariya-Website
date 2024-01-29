@@ -13,15 +13,15 @@
     <script src=""></script>
 </head>
 
-<body>
+<body class="font-Poppins">
     <div class="container flex flex-col md:flex-row h-screen">
         <div class="flex-1 h-screen md:h-screen ">
             <div class=" lg:w-96 lg:m-auto lg:mt-20 lg:ml-40 md:mt-24 md:ml-2 mt-4 ml-2">
                 <form>
-                    <h2 class="text-4xl font-bold mb-4 text-customed text-center lg:mt-4 lg:mb-8">Sign-in to <br>
+                    <h2 class="text-4xl font-bold mb-4 text-customed lg:mt-4 lg:mb-8">Sign-in to <br>
                         Memariya.com </h2>
                     <div id="role">
-                        <p>Log In as:</p>
+                        <p class="font-bold">Log In as:</p>
                         <input type="radio" id="student" name="role" value="Student">
                         <label for="Student">Student</label><br>
                         <input type="radio" id="instructor" name="role" value="Instructor">
@@ -30,43 +30,41 @@
 
 
                     <div class="mb-4">
-                        <label class="block text-customed font-bold">E-mail:</label>
-                        <input type="text" placeholder="Email" id="username" class="border-2 border-customed">
+                        <label class="block font-bold">E-mail:</label>
+                        <input type="text" placeholder="Email" id="username" class="rounded h-8 border">
                     </div>
-                    <div class="mb-8 relative">
-                        <label class="block text-customed font-bold">Password:</label>
+                    <div class="mb-4 relative">
+                        <label class="blockfont-bold">Password:</label>
                         <div class="flex items-center">
                             <input type="password" id="password" placeholder="Enter your password"
-                                class="border-2 border-customed">
-                            <i class=" toggle-password cursor-pointer absolute top-9 transform -translate-y-1/2 left-40 fas fa-eye text-customed"
-                                onclick="togglePassword()"></i>
+                                class="rounded h-8 border">
+
                         </div>
                     </div>
-                    <p class="italic text-right text-customed lg:mb-4"><a href="#" class="">Forgot my password?</a></p>
                     <div class="">
                         <button type="submit"
-                            class="bg-customed text-white px-8 py-2 rounded-full text-lg mt-4 text-center"
+                            class="bg-customed text-white px-8 py-2 rounded-full text-lg mt-4 text-center hover:bg-customdark"
                             id="signIn">Sign In</button>
                     </div>
                     <div class="flex justify-between mt-4 lg:mt-10 mb-4">
                         <div class="flex-1">
                             <a href="#" class="">
-                                <em class="fab fa-google text-3xl text-customed"></em>
+                                <i class="fab fa-google text-3xl text-customed hover:text-customdark"></i>
                             </a>
                         </div>
                         <div class="flex-1">
                             <a href="#" class="">
-                                <em class="fab fa-github text-3xl text-customed"></em>
+                                <i class="fab fa-github text-3xl text-customed"></i>
                             </a>
                         </div>
                         <div class="flex">
                             <a href="#" class="">
-                                <em class="fab fa-facebook text-3xl text-customed"></em>
+                                <i class="fab fa-facebook text-3xl text-customed"></i>
                             </a>
                         </div>
                     </div>
                     <div class="text-black lg:mt-10 font-semibold">
-                        You do not have an account yet? <a href="#" class="text-customed lg:ml-16 text-lg md:ml-10">Sign
+                        You do not have an account yet? <a href="#" class="text-customed lg:ml-8 text-lg md:ml-8">Sign
                             up</a>
                     </div>
 
