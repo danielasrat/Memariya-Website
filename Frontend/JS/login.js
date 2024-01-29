@@ -3,7 +3,6 @@ const inputEmail = document.getElementById("username");
 const inputPassword = document.getElementById("password");
 const role = document.querySelector('input[name="role"]:checked').value;
 
-
 async function loginUser(email, password, role) {
     const loginEndpoint = "http://localhost:3000/api/v1/auth/login";
 
@@ -19,6 +18,7 @@ async function loginUser(email, password, role) {
                 role: role
             }),
         });
+        console.log(response)
 
         if (!response.ok) {
             throw new Error("Network response was not ok");
