@@ -1,0 +1,1 @@
+const buybutton = document.getElementById('buypremium');
