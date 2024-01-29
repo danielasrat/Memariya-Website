@@ -23,7 +23,7 @@ async function signupUser(name, email, password) {
         }
 
         console.log("Signup successful! Redirecting to login page.");
-        window.location.href = "../Html/dashboard-instructor.html"; // Redirect to the login page
+        window.location.href = "../Html/log-in.html"; // Redirect to the login page
     } catch (error) {
         console.error("Error during signup:", error.message);
         alert("Signup failed. Please try again."); // Display an error message
