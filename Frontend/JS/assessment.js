@@ -62,7 +62,7 @@ submitAnswer.addEventListener('click', async (e) => {
         answers.push(answer.value);
     }
     alert('Your answer has been submitted')
-    console.log(answers)
+    // console.log(answers)
     try {
         const response = await fetch(`http://localhost:3000/api/v1/assessments/${courseName}`, {
             method: 'POST',

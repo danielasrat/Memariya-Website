@@ -16,7 +16,7 @@ const premium = async () => {
             },
         })
         const data = await response.json();
-        console.log(data,typeof data);
+        // console.log(data,typeof data);
         if (response.status !== 200 ) {
             alert(data.msg);
             premium()

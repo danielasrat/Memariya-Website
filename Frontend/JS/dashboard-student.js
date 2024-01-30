@@ -4,7 +4,7 @@ const user = JSON.parse(localStorage.getItem('user'));
 
 const id = user.id;
 const Username = user.name;
-console.log(id);
+// console.log(id);
 
 const submitAnswer = document.getElementById('submitAnswer');
 const container = document.getElementById('container');

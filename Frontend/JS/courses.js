@@ -5,7 +5,7 @@ const user = JSON.parse(localStorage.getItem('user'));
 const id = user.id;
 
 const container = document.getElementById('container');
-console.log(id,token)
+// console.log(id,token)
 const getCourses = async () => { 
     try {
         const response = await fetch(`http://localhost:3000/api/v1/students/${id}/courses`, {
@@ -20,7 +20,7 @@ const getCourses = async () => {
         if (response.status !== 200) {
             throw new Error(data.msg)
         }
-        console.log(data)
+        // console.log(data)
         const courses = data.map(course => { 
             const rate = course.progress.length/3*100
             return `<div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-lg my-8 p-4 w-96">
