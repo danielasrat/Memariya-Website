@@ -1,7 +1,7 @@
 const displayTutorsBtn = document.getElementById('displayTutorsBtn');
 const tutorsContainer = document.getElementById('tutorsContainer');
 const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QyIiwicm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE3MDY1Mjc2ODQsImV4cCI6MTcwOTExOTY4NH0.pZTbZV_nt_Oyewqyatz-IB4zonb4po_IAK_P9jmtnqM'
-const id = localStorage.getItem('id') || 0;
+const id = localStorage.getItem('id') || 1;
 console.log(tutorsContainer.innerHTML);
 const premium = async () => {
     try {

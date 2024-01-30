@@ -114,6 +114,7 @@ function getFinal(id) {
     window.location.href = '../Html/final.html';
 }
 function isCompleted(milestone, progress) {
+    console.log(milestone, progress)
     for (mile of progress) {
         if (mile === milestone){return true}
     };
