@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate</title>
+    <title>Student Profile</title>
     <link rel="stylesheet" href="../CSS/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
@@ -67,19 +67,34 @@
     </header>
     <main class="font-Poppins mt-20 ml-20">
         <div class="text-center">
-            <p class="text-3xl text-center font-semibold">Certificates</p>
-            <p class="text-2xl font-semibold mt-4">Here are your earned memariya.com certifications</p>
-            <div id="container">
+            <p class="text-3xl text-center font-semibold">User Profile</p>
+            <p class="text-2xl font-semibold mt-4" id="StudentName">Welcome, [Student Name]!</p>
 
-                <div class="certificate-1 border-2 border-blue-500 p-6 rounded-lg mt-8">
-                    <p class="text-xl font-semibold">Course: ${certificate.name}</p>
-                    <p class="text-lg">Level: ${certificate.level}</p>
-                    <p class="text-md mt-4">This is to certify that</p>
-                    <p class="text-2xl font-bold">[${studentName}]</p>
-                    <p class="text-md mt-2">has successfully completed the above-mentioned course with great dedication
-                        and commitment.</p>
-                    <p class="text-lg mt-4">Issued on: [${Date()}]</p>
-                </div>
+            <div class="profile-info border-2 border-blue-500 p-6 rounded-lg mt-8">
+                <p class="text-xl font-semibold">Name: <span id="studentName">[Student Name]</span></p>
+                <p class="text-xl font-semibold">Email: <span id="studentEmail">[Student Email]</span></p>
+
+                    <div class="mb-4">
+                        <label for="newName" class="block text-md font-medium text-gray-700">Change Name:</label>
+                        <input required type="text" id="newName" name="newName" placeholder="Enter your new name"
+                            class="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    </div>
+                    <p id="updateNameError"></p>
+                    <button onclick="updateName()" type="submit" class="bg-custom hover:bg-customdark text-white font-bold mt-2 py-2 px-4 rounded-md">
+                        Update Name
+                    </button>
+
+                
+                    <div class="mb-4">
+                        <label for="newEmail" class="block text-md font-medium text-gray-700">Change Email:</label>
+                        <input required type="email" id="newEmail" name="newEmail" placeholder="Enter your new email"
+                            class="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    </div>
+                    <p id="updateEmailError"></p>                
+                    <button onclick="updateEmail()" type="submit" class="bg-custom hover:bg-customdark text-white font-bold mt-2 py-2 px-4 rounded-md">
+                        Update Email
+                    </button>
+                
             </div>
         </div>
     </main>
@@ -110,7 +125,7 @@
         </div>
         <p class="mt-2 text-white "><span>© </span>Memariya Education Solutions, 2023</p>
     </footer>
-    <script src="../JS/certificates.js"></script>
+    <script src="../JS/profile-student.js"></script>
 </body>
 
 </html>
