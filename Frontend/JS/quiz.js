@@ -1,5 +1,6 @@
 const token = localStorage.getItem('token')
 const user = JSON.parse(localStorage.getItem('user'));
+
 const id = user.id;
 const courseId = localStorage.getItem('courseId')
 const milestone = localStorage.getItem('milestone')

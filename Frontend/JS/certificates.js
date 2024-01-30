@@ -1,9 +1,10 @@
 
 const token = localStorage.getItem('token')
 const user = JSON.parse(localStorage.getItem('user'));
+
 const id = user.id
 const courseId = localStorage.getItem('courseId')
-const studentName = localStorage.getItem('studentName')
+const studentName = user.name
 
 const container = document.getElementById('container');
 // console.log(id, token, courseId, container.innerHTML)

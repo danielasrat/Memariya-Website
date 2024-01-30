@@ -1,7 +1,5 @@
-const { auth } = require('./auth.js');
 const token = localStorage.getItem('token')
 const user = JSON.parse(localStorage.getItem('user'));
-auth(token, user);
 
 const {id, email, name: studentName} = user;
 const courseId = localStorage.getItem('courseId')

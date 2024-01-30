@@ -1,7 +1,7 @@
-import {auth} from './auth.js';
+
 const token = localStorage.getItem('token')
 const user = JSON.parse(localStorage.getItem('user'));
-auth(token, user);
+
 const id = user.id;
 
 const buybutton = document.getElementById('buypremium');

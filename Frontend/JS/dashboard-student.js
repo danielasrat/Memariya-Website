@@ -1,5 +1,7 @@
+
 const token = localStorage.getItem('token')
 const user = JSON.parse(localStorage.getItem('user'));
+
 const id = user.id;
 const Username = user.name;
 console.log(id);
