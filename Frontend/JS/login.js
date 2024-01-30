@@ -62,15 +62,13 @@ async function login(event) {
             } else {
                 window.location.href = "../Html/dashboard-instructor.html";
             }
-        }
-    } catch (error) {
-        if (error instanceof TypeError && error.message.includes('Network request failed')) {
-            alert('Network error. Please check your internet connection.');
         } else {
-            const errorMessage = error.message || 'An unknown error occurred.';
-            alert(`Please carefully enter your credentials.`);
+            throw new Error(data.msg)
         }
-        window.location.href = '../login.html';
+
+    } catch (error) {
+        alert(error.message)
+        window.location.href = './log-in.html';
     }
     
 }

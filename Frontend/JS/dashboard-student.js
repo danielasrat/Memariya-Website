@@ -28,7 +28,7 @@ async function addCourse(courseid,name) {
         if (response.status !== 200) {
             throw new Error(data.msg)
         } 
-        alert(data.message);
+        alert(`${name} Beginner course added successfully`);
     } catch (error) {
         alert(error.message);
     }
