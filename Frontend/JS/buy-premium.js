@@ -1,6 +1,10 @@
+import {auth} from './auth.js';
+const token = localStorage.getItem('token')
+const user = JSON.parse(localStorage.getItem('user'));
+auth(token, user);
+const id = user.id;
+
 const buybutton = document.getElementById('buypremium');
-const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QyIiwicm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE3MDY1Mjc2ODQsImV4cCI6MTcwOTExOTY4NH0.pZTbZV_nt_Oyewqyatz-IB4zonb4po_IAK_P9jmtnqM'
-const id = localStorage.getItem('id') || 1;
 
 const buyPremium = async () => {
     try {

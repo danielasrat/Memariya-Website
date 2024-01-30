@@ -1,12 +1,14 @@
-const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QyIiwicm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE3MDY1ODIyODMsImV4cCI6MTcwOTE3NDI4M30.I-4Hpyq4Mv1sZ4OiLTC_kDaKDdmS4cW8OSsMgnbpZx0'
-const id = localStorage.getItem('id') || 1;
-const email = localStorage.getItem('studentEmail') || 'eba01@gmail.com'
-const courseId = localStorage.getItem('courseId') || 0;
-const studentName = localStorage.getItem('studentName') || 'test2';
+const { auth } = require('./auth.js');
+const token = localStorage.getItem('token')
+const user = JSON.parse(localStorage.getItem('user'));
+auth(token, user);
+
+const {id, email, name: studentName} = user;
+const courseId = localStorage.getItem('courseId')
 
 document.getElementById('studentEmail').innerHTML = email;
 document.getElementById('studentName').innerHTML = studentName;
-document.getElementById('StudentName').innerHTML = studentName;
+document.getElementById('StudentName').innerHTML = `Welcome ${studentName}`;
 
 // localStorage.setItem('test', JSON.stringify({ name: 'test', email: 'email' }))
 // let test = JSON.parse(localStorage.getItem('test'))
@@ -25,9 +27,10 @@ async function updateName() {
             })
         })
         const data = await response.json()
-        console.log(data)
+
         if (response.status !== 200) throw new Error(data.msg)
-        localStorage.setItem('studentName', data.name)
+        user.name = data.name
+        localStorage.setItem('user',JSON.stringify(user))
         location.reload()
         
     } catch (error) {
@@ -48,7 +51,9 @@ async function updateEmail() {
         })
         const data = await response.json()
         if (response.status !== 200) throw new Error(data.msg)
-        localStorage.setItem('studentEmail', data.email)
+        user.email = data.email
+        localStorage.setItem('user',JSON.stringify(user))
+
         location.reload()
         
     } catch (error) {

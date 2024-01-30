@@ -228,7 +228,7 @@
       ]
     },
 {
-  "name":"Java script",
+  "name":"JavaScript",
   "answer": [1, 0, 0, 3, 2, 2, 0, 0, 3, 0, 0, 0],
   "questions": [
     {
@@ -307,7 +307,7 @@
       "question": "What is the correct way to write a comment in JavaScript?",
       "choice": [
         "// This is a comment",
-        "<!-- This is a comment -->",
+        "# This is a comment ",
         "' This is a comment",
         "/* This is a comment */"
       ]

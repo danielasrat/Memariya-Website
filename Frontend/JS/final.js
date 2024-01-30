@@ -1,13 +1,14 @@
-const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QyIiwicm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE3MDY1ODIyODMsImV4cCI6MTcwOTE3NDI4M30.I-4Hpyq4Mv1sZ4OiLTC_kDaKDdmS4cW8OSsMgnbpZx0'
-const id = localStorage.getItem('id') || 1;
-const courseId = localStorage.getItem('courseId') || 0;
+const token = localStorage.getItem('token')
+const user = JSON.parse(localStorage.getItem('user'))
+const id = user.id
+const courseId = localStorage.getItem('courseId')
 
 const submitAnswer = document.getElementById('submitAnswer');
 const container = document.getElementById('container');
 // console.log(id, token, courseId, container.innerHTML)
 
 const getFinal = async () => {
-    try { 
+    try {
         const response = await fetch(`http://localhost:3000/api/v1/finals/${courseId}`, {
             method: 'GET',
             headers: {
@@ -64,13 +65,13 @@ submitAnswer.addEventListener('click', async (e) => {
                 'content-Type': 'application/json',
                 'Authorization': token
             },
-            body: JSON.stringify({ answer : answers })
+            body: JSON.stringify({ answer: answers })
         })
         const data = await response.json();
         if (response.status !== 200) {
             throw new Error(data.msg)
         }
-        document.getElementById('result').innerHTML =`${data} of 9 correct!`;
+        document.getElementById('result').innerHTML = `${data} of 9 correct!`;
     } catch (error) {
         alert(error.message)
     }

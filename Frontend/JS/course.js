@@ -1,6 +1,7 @@
-const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MCwibmFtZSI6InRlc3QiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTcwNjU3NDU2MiwiZXhwIjoxNzA5MTY2NTYyfQ.mXy84L4mMVPgVFrbGCsuFZaMP0vDReG66Bva-Y64R6s'
-const id = localStorage.getItem('id') || 1;
-const courseId = localStorage.getItem('courseId') || 0;
+const token = localStorage.getItem('token')
+const user = JSON.parse(localStorage.getItem('user'));
+const id = user.id;
+const courseId = localStorage.getItem('courseId')
 
 const container = document.getElementById('container');
 // console.log(id, token, courseId, container.innerHTML)

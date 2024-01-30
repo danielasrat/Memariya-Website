@@ -1,7 +1,8 @@
-const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6ImViYWEiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTcwNjYxNzI3NCwiZXhwIjoxNzA5MjA5Mjc0fQ.zd7ZGVABlBQ5ZiXFFbWxe-NXWiwVd5S9Qgrd0eYy7bo'
-const id = localStorage.getItem('id') || 1;
-const courseId = localStorage.getItem('courseId') || 0;
-const milestone = localStorage.getItem('milestone') || 1;
+const token = localStorage.getItem('token')
+const user = JSON.parse(localStorage.getItem('user'));
+const id = user.id;
+const courseId = localStorage.getItem('courseId')
+const milestone = localStorage.getItem('milestone')
 
 const submitAnswer = document.getElementById('submitAnswer');
 const container = document.getElementById('container');

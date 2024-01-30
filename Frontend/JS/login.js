@@ -56,6 +56,8 @@ async function login(event) {
         const data = await response.json();
         if (response.status === 200) {
             localStorage.setItem('token', `Bearer ${data.token}`);
+            const user = data.user;
+            localStorage.setItem('user', JSON.stringify(user));
 
             if (role === "Student") {
                 window.location.href = "../Html/dashboard-student.html";

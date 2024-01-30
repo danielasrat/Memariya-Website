@@ -77,7 +77,7 @@
         "courses": [
             {
                 "id": 7,
-                "name": "Html",
+                "name": "Java",
                 "level": "Intermediate"
             },
             {
@@ -102,7 +102,7 @@
         "courses": [
             {
                 "id": 6,
-                "name": "Html",
+                "name": "Java",
                 "level": "Beginner"
             }
         ]
@@ -156,17 +156,17 @@
         "courses": [
             {
                 "id" : 6,
-                "name": "Html",
+                "name": "Java",
                 "level": "Beginner"
             },
             {
                 "id" : 7,
-                "name": "Html",
+                "name": "Java",
                 "level": "Intermediate"
             },
             {
                 "id" : 8,
-                "name": "Html",
+                "name": "Java",
                 "level": "Advanced"
             }
         ]
@@ -188,12 +188,12 @@
             
             {
                 "id" : 7,
-                "name": "Html",
+                "name": "Java",
                 "level": "Intermediate"
             },
             {
                 "id" : 8,
-                "name": "Html",
+                "name": "Java",
                 "level": "Advanced"
             }
         ]
@@ -248,12 +248,12 @@
             },
             {
                 "id" : 7,
-                "name": "Html",
+                "name": "Java",
                 "level": "Intermediate"
             },
             {
                 "id" : 8,
-                "name": "Html",
+                "name": "Java",
                 "level": "Advanced"
             }
 
@@ -276,7 +276,7 @@
         "courses": [
             {
                 "id" : 7,
-                "name": "Html",
+                "name": "Java",
                 "level": "Intermediate"
             },
             {
@@ -314,7 +314,7 @@
             },
             {
                 "id" : 8,
-                "name": "Html",
+                "name": "Java",
                 "level": "Advanced"
             }
         ]

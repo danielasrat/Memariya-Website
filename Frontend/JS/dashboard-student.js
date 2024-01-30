@@ -1,9 +1,15 @@
-const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QyIiwicm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE3MDY1ODIyODMsImV4cCI6MTcwOTE3NDI4M30.I-4Hpyq4Mv1sZ4OiLTC_kDaKDdmS4cW8OSsMgnbpZx0'
-const id = localStorage.getItem('id') || 1;
-// const courseId = localStorage.getItem('courseId') || 0;
+const token = localStorage.getItem('token')
+const user = JSON.parse(localStorage.getItem('user'));
+const id = user.id;
+const Username = user.name;
+console.log(id);
 
 const submitAnswer = document.getElementById('submitAnswer');
 const container = document.getElementById('container');
+
+document.getElementById('UserName').innerHTML = `${Username}`;
+document.getElementById('Username').innerHTML = `<em class="font-bold text-lg">Username</em>: ${Username}`;
+
 
 function setCourseName(name) {
     localStorage.setItem("courseName", name);
