@@ -14,7 +14,7 @@ const getCourse = async (req, res) => {
     if (!course) {
         throw new NotFoundError(`No course with id : ${id}`);
     }
-    res.status(StatusCodes.OK).json({ course });
+    res.status(StatusCodes.OK).json( course );
 }
 
 const getRate = async (req, res) => {

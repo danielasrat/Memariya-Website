@@ -3,7 +3,7 @@ const id = localStorage.getItem('id') || 1;
 
 const container = document.getElementById('container');
 console.log(id,token)
-const getCourse = async () => { 
+const getCourses = async () => { 
     try {
         const response = await fetch(`http://localhost:3000/api/v1/students/${id}/courses`, {
             method: 'GET',
@@ -42,7 +42,7 @@ const getCourse = async () => {
         
       }
 }
-getCourse();
+getCourses();
 
 
 async function goToCourse(id) {
