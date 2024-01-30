@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
+    <title>Final Exam</title>
     <link rel="stylesheet" href="../CSS/output.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-
-<body class="font-serif">
+<body>
     <header>
         <nav class="bg-custom text-white flex flex-wrap items-center justify-between md:justify-center">
             <div class="flex flex-shrink-0 items-center">
@@ -20,14 +16,26 @@
             </div>
         </nav>
     </header>
+    
+
     <main class="container mx-auto p-6">
         <a class="bg-custom hover:bg-customdark text-white font-bold mt-2 py-2 px-4 rounded-md" href="course.html">Back</a>
         <section class="mb-8">
-            <h2 class="text-2xl text-center font-bold mb-4">Assesment Quiz</h2>
+            <h2 class="text-2xl text-center font-bold mb-4">Assesment Final</h2>
             <form class="mx-auto mt-8 w-full flex flex-col items-center" >
                 <!-- Question 1 -->
-                <div id="container" class=" ">
-                    
+                <div id="container" >
+                    <fieldset class="mb-4">
+                        <legend class="text-xl font-bold mb-4">${index + 1}. ${question}</legend>
+                        <input required id="${index}1" type="radio" value="0" name="question${index + 1}" class="mx-8">
+                        <label for="${index}1">${choice[0]}</label><br>
+                        <input id="${index}2" type="radio" value="1" name="question${index + 1}" class="mx-8">
+                        <label for="${index}2">${choice[1]}</label><br>
+                        <input id="${index}3" type="radio" value="2" name="question${index + 1}" class="mx-8">
+                        <label for="${index}3">${choice[2]}</label><br>
+                        <input id="${index}4" type="radio" value="3" name="question${index + 1}" class="mx-8">
+                        <label for="${index}4">${choice[3]}</label>
+                    </fieldset>   
                 </div>
                 <p id="result"></p>
                 <button id="submitAnswer"  type="submit"
@@ -35,6 +43,7 @@
             </form>
         </section>
     </main>
+    
     <footer class="text-center mt-8">
         <section>
             <h3 class="text-2xl font-bold">About this website</h3>
@@ -45,7 +54,8 @@
         </section>
         <p class="mt-2"><span>© </span>Memariya Education Solutions, 2023</p>
     </footer>
-    <script src="../JS/quiz.js"></script>
+    <script src="../JS/final.js"></script>
 </body>
 
 </html>
+</body>

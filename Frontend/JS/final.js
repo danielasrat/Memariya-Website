@@ -1,14 +1,14 @@
 const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QyIiwicm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE3MDY1ODIyODMsImV4cCI6MTcwOTE3NDI4M30.I-4Hpyq4Mv1sZ4OiLTC_kDaKDdmS4cW8OSsMgnbpZx0'
 const id = localStorage.getItem('id') || 1;
 const courseId = localStorage.getItem('courseId') || 0;
-const milestone = localStorage.getItem('milestone') || 1;
 
 const submitAnswer = document.getElementById('submitAnswer');
 const container = document.getElementById('container');
 // console.log(id, token, courseId, container.innerHTML)
-const getQuiz = async () => {
-    try {
-        const response = await fetch(`http://localhost:3000/api/v1/quizzes?courseId=${courseId}&milestone=${milestone}`, {
+
+const getFinal = async () => {
+    try { 
+        const response = await fetch(`http://localhost:3000/api/v1/finals/${courseId}`, {
             method: 'GET',
             headers: {
                 'content-Type': 'application/json',
@@ -38,16 +38,17 @@ const getQuiz = async () => {
                     </fieldset>
             `
         }).join('');
-
         container.innerHTML = form
+
     } catch (error) { container.innerHTML = error.message; }
+
 }
-getQuiz();
+getFinal();
 
 submitAnswer.addEventListener('click', async (e) => {
     e.preventDefault();
     const answers = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 9; i++) {
         const answer = document.querySelector(`input[name="question${i + 1}"]:checked`)
         if (!answer) {
             alert(`Please answer question ${i + 1}`)
@@ -57,7 +58,7 @@ submitAnswer.addEventListener('click', async (e) => {
     }
     alert('Your answer has been submitted')
     try {
-        const response = await fetch(`http://localhost:3000/api/v1/quizzes?courseId=${courseId}&milestone=${milestone}`, {
+        const response = await fetch(`http://localhost:3000/api/v1/finals/${courseId}`, {
             method: 'POST',
             headers: {
                 'content-Type': 'application/json',
@@ -69,7 +70,7 @@ submitAnswer.addEventListener('click', async (e) => {
         if (response.status !== 200) {
             throw new Error(data.msg)
         }
-        document.getElementById('result').innerHTML =`${data} of 3 correct!`;
+        document.getElementById('result').innerHTML =`${data} of 9 correct!`;
     } catch (error) {
         alert(error.message)
     }

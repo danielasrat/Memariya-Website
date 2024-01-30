@@ -111,7 +111,7 @@ function getQuiz(milestone) {
 
 function getFinal(id) {
     localStorage.setItem('finalId', id);
-    window.location.href = '../Html/final-page.html';
+    window.location.href = '../Html/final.html';
 }
 function isCompleted(milestone, progress) {
     for (mile of progress) {
