@@ -2,64 +2,64 @@
     {
         "id" : 0,
         "name": "Python",
-        "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Python is a versatile and easy-to-learn programming language. It is widely used for web development, data analysis, artificial intelligence, and more.",
         "level": "Beginner",
-        "resource": "https://www.python.org/"
+        "resource": "https://drive.google.com/drive/folders/1DDNvkfLH2qnnB291xgjHqwUJ0zAhuKBx?usp=drive_link"
     },
     {
         "id" : 1,
         "name": "Python",
-        "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Take your Python skills to the next level! This intermediate course covers advanced topics like web frameworks, asynchronous programming, and data manipulation.",
         "level": "Intermediate",
-        "resource": "https://www.python.org/"
+        "resource": "https://drive.google.com/drive/folders/1K8Sxz4P6aZUJ_LN0NmKIf_05CkcRtCxo?usp=drive_link"
     },
     {
         "id" : 2,
         "name": "Python",
-        "description": "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Master Python with this advanced course! Explore topics such as machine learning, data science, and building scalable applications.",
         "level": "Advanced",
-        "resource": "https://www.python.org/"
+        "resource": "https://drive.google.com/drive/folders/1hPNUZV8QEhU38EtlMoSn4hSlKWvr6Y-9?usp=drive_link"
     },
     {
         "id" : 3,
         "name": "JavaScript",
-        "description": "JavaScript is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "JavaScript powers the dynamic behavior of web pages. Learn the basics and start creating interactive websites.",
         "level": "Beginner",
         "resource": "https://www.JavaScript.org/"
     },
     {
         "id" : 4,
         "name": "JavaScript",
-        "description": "JavaScript is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Dive deeper into JavaScript! Explore concepts like DOM manipulation, AJAX, and ES6 features in this intermediate course.",
         "level": "Intermediate",
         "resource": "https://www.JavaScript.org/"
     },
     {
         "id" : 5,
         "name": "JavaScript",
-        "description": "JavaScript is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Become a JavaScript expert! This advanced course covers topics such as Node.js, React, and advanced front-end development.",
         "level": "Advanced",
         "resource": "https://www.JavaScript.org/"
     },
     {
         "id" : 6,
         "name": "Java",
-        "description": "Java is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Java is a robust and versatile programming language. Learn the fundamentals and start building applications.",
         "level": "Beginner",
-        "resource": "https://www.Java.org/"
+        "resource": "https://drive.google.com/drive/folders/1q60T4-SJ4j91QKJGlzJspH3bD7IUIezz?usp=drive_link"
     },
     {
         "id" : 7,
         "name": "Java",
-        "description": "Java is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Take your Java skills to the next level! This intermediate course covers topics like multithreading, database connectivity, and JavaFX.",
         "level": "Intermediate",
-        "resource": "https://www.Java.org/"
+        "resource": "https://drive.google.com/drive/folders/1JCtiaP5yr2Je0vck_zH4Gd8Zss_z_1wO?usp=drive_link"
     },
     {
         "id" : 8,
         "name": "Java",
-        "description": "Java is a programming language that lets you work quickly and integrate systems more effectively.",
+        "description": "Become a Java expert! This advanced course covers topics like Spring Framework, Hibernate, and building enterprise-level applications.",
         "level": "Advanced",
-        "resource": "https://www.Java.org/"
+        "resource": "https://drive.google.com/drive/folders/1a_efQ9KOxInIrSTyfI7P2ObUWyGW3XkN?usp=drive_link"
     }
 ]
