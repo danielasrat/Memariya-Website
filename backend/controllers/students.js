@@ -66,7 +66,7 @@ const addCourse = async (req, res) => {
     if (!student) {
         throw new NotFoundError(`No student with id : ${id}`);
     }
-    const duplicate = student.courses.find((c) => c.id === course.id);
+    const duplicate = student.courses.find((c) => c.id === Number(course.id));
     if (!duplicate) {
         student.courses.push(course);
         await student.save();
