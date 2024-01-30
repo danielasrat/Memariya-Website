@@ -43,23 +43,23 @@
     },
     {
         "id" : 6,
-        "name": "Html",
-        "description": "Html is a programming language that lets you work quickly and integrate systems more effectively.",
+        "name": "Java",
+        "description": "Java is a programming language that lets you work quickly and integrate systems more effectively.",
         "level": "Beginner",
-        "resource": "https://www.Html.org/"
+        "resource": "https://www.Java.org/"
     },
     {
         "id" : 7,
-        "name": "Html",
-        "description": "Html is a programming language that lets you work quickly and integrate systems more effectively.",
+        "name": "Java",
+        "description": "Java is a programming language that lets you work quickly and integrate systems more effectively.",
         "level": "Intermediate",
-        "resource": "https://www.Html.org/"
+        "resource": "https://www.Java.org/"
     },
     {
         "id" : 8,
-        "name": "Html",
-        "description": "Html is a programming language that lets you work quickly and integrate systems more effectively.",
+        "name": "Java",
+        "description": "Java is a programming language that lets you work quickly and integrate systems more effectively.",
         "level": "Advanced",
-        "resource": "https://www.Html.org/"
+        "resource": "https://www.Java.org/"
     }
 ]

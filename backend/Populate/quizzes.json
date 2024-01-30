@@ -103,5 +103,850 @@
                 ]
             }
         ]
+    },
+
+
+    {
+        "id": 1,
+        "milestone": 1,
+        "level": "Intermediate",
+        "answer": [1, 2, 0],
+        "questions": [
+            {
+                "question": "What does the 'if __name__ == '__main__': statement do in Python?",
+                "choice": [
+                    "It checks if the module is being imported or executed as the main program",
+                    "It initializes a new module",
+                    "It creates a new function",
+                    "It defines a class"
+                ]
+            },
+            {
+                "question": "What is the purpose of 'lambda' functions in Python?",
+                "choice": [
+                    "To define multiple functions in a single line",
+                    "To create anonymous functions",
+                    "To concatenate strings",
+                    "To generate random numbers"
+                ]
+            },
+            {
+                "question": "What is the difference between '== and 'is' operators in Python?",
+                "choice": [
+                    "'==' checks for value equality, while 'is' checks for object identity",
+                    "'is' checks for value equality, while '==' checks for object identity",
+                    "'==' and 'is' are used interchangeably in Python",
+                    "'is' is used for assignment, while '==' is used for comparison"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "milestone": 2,
+        "level": "Intermediate",
+        "answer": [0, 2, 1],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'try' and 'except' blocks in Python?",
+                "choice": [
+                    "To handle exceptions and errors",
+                    "To define custom functions",
+                    "To import external modules",
+                    "To declare global variables"
+                ]
+            },
+            {
+                "question": "What is the 'self' parameter used for in Python class methods?",
+                "choice": [
+                    "To reference the current instance of the class",
+                    "To declare a static method",
+                    "To access class attributes",
+                    "To create a new instance of the class"
+                ]
+            },
+            {
+                "question": "What does the 'with' statement do in Python?",
+                "choice": [
+                    "It ensures that resources are properly released",
+                    "It defines a new function",
+                    "It performs file input/output operations",
+                    "It imports external modules"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "milestone": 3,
+        "level": "Intermediate",
+        "answer": [1, 3, 2],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'map()' function in Python?",
+                "choice": [
+                    "To apply a function to every element in an iterable",
+                    "To create a new list from existing lists",
+                    "To sort elements in an iterable",
+                    "To filter elements in an iterable"
+                ]
+            },
+            {
+                "question": "What is the difference between 'append()' and 'extend()' methods in Python lists?",
+                "choice": [
+                    "'append()' adds a single element to the end of the list, while 'extend()' adds multiple elements",
+                    "'extend()' adds a single element to the end of the list, while 'append()' adds multiple elements",
+                    "'append()' removes an element from the list, while 'extend()' adds elements",
+                    "'extend()' removes an element from the list, while 'append()' adds elements"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'super()' function in Python?",
+                "choice": [
+                    "To call a method in the superclass",
+                    "To create a new instance of a class",
+                    "To define a static method",
+                    "To declare a class variable"
+                ]
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "milestone": 1,
+        "level": "Advanced",
+        "answer": [3, 1, 2],
+        "questions": [
+            {
+                "question": "What are decorators in Python?",
+                "choice": [
+                    "Syntax sugar",
+                    "A way to remove comments from code",
+                    "Functions that modify the behavior of other functions",
+                    "A method for object-oriented programming"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'yield' keyword in Python?",
+                "choice": [
+                    "To return a value from a function",
+                    "To generate a sequence of values lazily",
+                    "To signal the end of a loop",
+                    "To raise an exception"
+                ]
+            },
+            {
+                "question": "What is a list comprehension in Python?",
+                "choice": [
+                    "A way to generate random lists",
+                    "A concise way to create lists",
+                    "A method for sorting lists",
+                    "A type of exception handling"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "milestone": 2,
+        "level": "Advanced",
+        "answer": [2, 0, 1],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'collections' module in Python?",
+                "choice": [
+                    "To create mathematical functions",
+                    "To implement data structures",
+                    "To perform file input/output operations",
+                    "To define custom exceptions"
+                ]
+            },
+            {
+                "question": "What is the difference between 'deepcopy()' and 'copy()' methods in Python?",
+                "choice": [
+                    "'deepcopy()' creates a new object and recursively copies all its elements, while 'copy()' creates a shallow copy",
+                    "'copy()' creates a new object and recursively copies all its elements, while 'deepcopy()' creates a shallow copy",
+                    "'deepcopy()' is used for copying dictionaries, while 'copy()' is used for lists",
+                    "'copy()' is used for copying dictionaries, while 'deepcopy()' is used for lists"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'asyncio' module in Python?",
+                "choice": [
+                    "To implement asynchronous I/O operations",
+                    "To handle exceptions and errors",
+                    "To define custom decorators",
+                    "To create web servers"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "milestone": 3,
+        "level": "Advanced",
+        "answer": [1, 3, 0],
+        "questions": [
+            {
+                "question": "What is the purpose of the '__slots__' attribute in Python classes?",
+                "choice": [
+                    "To restrict the attributes that can be added to instances of a class",
+                    "To define class variables",
+                    "To specify default values for instance variables",
+                    "To create static methods"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'contextlib' module in Python?",
+                "choice": [
+                    "To handle context management in Python",
+                    "To perform mathematical operations",
+                    "To define custom exceptions",
+                    "To create iterators"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'functools' module in Python?",
+                "choice": [
+                    "To work with higher-order functions",
+                    "To define regular expressions",
+                    "To perform file input/output operations",
+                    "To create GUI applications"
+                ]
+            }
+        ]
+    },
+
+    {
+        "id": 3,
+        "milestone": 1,
+        "level": "Beginner",
+        "answer": [0, 2, 1],
+        "questions": [
+            {
+                "question": "What is the correct syntax to create a variable in JavaScript?",
+                "choice": [
+                    "var x = 5;",
+                    "int x = 5;",
+                    "x = 5;",
+                    "x := 5;"
+                ]
+            },
+            {
+                "question": "Which of the following is not a JavaScript data type?",
+                "choice": [
+                    "String",
+                    "Boolean",
+                    "Float",
+                    "Number"
+                ]
+            },
+            {
+                "question": "What is the result of the expression '3 + 2 * 5' in JavaScript?",
+                "choice": [
+                    "10",
+                    "25",
+                    "13",
+                    "1"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "milestone": 2,
+        "level": "Beginner",
+        "answer": [1, 0, 2],
+        "questions": [
+            {
+                "question": "What does the 'console.log()' function do in JavaScript?",
+                "choice": [
+                    "It prints output to the console",
+                    "It reads user input from the console",
+                    "It generates random numbers",
+                    "It performs mathematical calculations"
+                ]
+            },
+            {
+                "question": "What is the correct way to start a JavaScript comment?",
+                "choice": [
+                    "//",
+                    "/*",
+                    "<!--",
+                    "-->"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'document.getElementById()' method in JavaScript?",
+                "choice": [
+                    "To select an HTML element by its class name",
+                    "To select an HTML element by its ID",
+                    "To select an HTML element by its tag name",
+                    "To create a new HTML element"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "milestone": 3,
+        "level": "Beginner",
+        "answer": [3, 1, 0],
+        "questions": [
+            {
+                "question": "What is the correct way to include an external JavaScript file named 'script.js' in an HTML file?",
+                "choice": [
+                    "<script src='script.js'></script>",
+                    "<javascript src='script.js'></javascript>",
+                    "<js src='script.js'></js>",
+                    "<include src='script.js'></include>"
+                ]
+            },
+            {
+                "question": "What does the 'typeof' operator do in JavaScript?",
+                "choice": [
+                    "Returns the data type of a variable",
+                    "Checks if a variable is undefined",
+                    "Performs a type conversion",
+                    "Concatenates two strings"
+                ]
+            },
+            {
+                "question": "What is the result of the expression '10 / 3' in JavaScript?",
+                "choice": [
+                    "3.333",
+                    "3",
+                    "3.0",
+                    "0.333"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "milestone": 1,
+        "level": "Intermediate",
+        "answer": [1, 2, 0],
+        "questions": [
+            {
+                "question": "What does the '== and '===' operators do in JavaScript?",
+                "choice": [
+                    "'==' checks for value equality, while '===' checks for value and type equality",
+                    "'===' checks for value equality, while '==' checks for value and type equality",
+                    "'==' and '===' are used interchangeably in JavaScript",
+                    "'===' is used for assignment, while '==' is used for comparison"
+                ]
+            },
+            {
+                "question": "What is the purpose of 'let' and 'const' in JavaScript?",
+                "choice": [
+                    "'let' and 'const' are used to declare variables with block scope",
+                    "'let' and 'const' are used to declare global variables",
+                    "'let' is used for immutable variables, while 'const' is used for mutable variables",
+                    "'let' is used for constant variables, while 'const' is used for variables that can be reassigned"
+                ]
+            },
+            {
+                "question": "What is a closure in JavaScript?",
+                "choice": [
+                    "A function that has access to its parent scope, even after the parent function has closed",
+                    "A way to close browser windows",
+                    "A method for data encryption",
+                    "A type of JavaScript error"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "milestone": 2,
+        "level": "Intermediate",
+        "answer": [0, 2, 1],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'this' keyword in JavaScript?",
+                "choice": [
+                    "To refer to the current object",
+                    "To create a new object",
+                    "To delete an object",
+                    "To access the prototype of an object"
+                ]
+            },
+            {
+                "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
+                "choice": [
+                    "'null' is an assigned value, while 'undefined' means a variable has been declared but not assigned a value",
+                    "'undefined' is an assigned value, while 'null' means a variable has been declared but not assigned a value",
+                    "'null' is used to represent empty strings, while 'undefined' is used to represent missing properties",
+                    "'undefined' is used to represent empty strings, while 'null' is used to represent missing properties"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'forEach()' method in JavaScript?",
+                "choice": [
+                    "To execute a provided function once for each array element",
+                    "To sort the elements of an array",
+                    "To concatenate two arrays",
+                    "To filter elements of an array based on a condition"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "milestone": 3,
+        "level": "Intermediate",
+        "answer": [1, 3, 2],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'bind()' method in JavaScript?",
+                "choice": [
+                    "To create a new function",
+                    "To set the value of 'this' explicitly in a function",
+                    "To call a function asynchronously",
+                    "To execute a function immediately"
+                ]
+            },
+            {
+                "question": "What is the 'prototype' property in JavaScript?",
+                "choice": [
+                    "An object that is used to add properties and methods to an existing object",
+                    "A built-in object that provides methods for object creation",
+                    "A property that refers to the parent class",
+                    "A method for object serialization"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'Array.map()' method in JavaScript?",
+                "choice": [
+                    "To create a new array with the results of calling a provided function on every element in the calling array",
+                    "To check if all elements in an array pass a test",
+                    "To execute a provided function once for each array element",
+                    "To sort the elements of an array"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "milestone": 1,
+        "level": "Advanced",
+        "answer": [0, 2, 1],
+        "questions": [
+            {
+                "question": "What is a promise in JavaScript?",
+                "choice": [
+                    "An object representing the eventual completion or failure of an asynchronous operation",
+                    "A guarantee that a function will return a value",
+                    "A method for error handling",
+                    "A type of data structure"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'async' and 'await' keywords in JavaScript?",
+                "choice": [
+                    "To handle asynchronous functions in a synchronous way",
+                    "To force functions to execute asynchronously",
+                    "To create recursive functions",
+                    "To define anonymous functions"
+                ]
+            },
+            {
+                "question": "What is the 'Event Loop' in JavaScript?",
+                "choice": [
+                    "A mechanism that handles asynchronous callbacks",
+                    "A data structure for storing events",
+                    "A method for handling keyboard events",
+                    "A type of error in JavaScript"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "milestone": 2,
+        "level": "Advanced",
+        "answer": [1, 3, 0],
+        "questions": [
+            {
+                "question": "What is the purpose of 'destructuring' in JavaScript?",
+                "choice": [
+                    "To extract data from arrays or objects into distinct variables",
+                    "To remove elements from arrays",
+                    "To create copies of objects",
+                    "To convert objects into arrays"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'Symbol' data type in JavaScript?",
+                "choice": [
+                    "To create unique identifiers",
+                    "To perform mathematical operations",
+                    "To define custom exceptions",
+                    "To handle asynchronous operations"
+                ]
+            },
+            {
+                "question": "What is 'strict mode' in JavaScript?",
+                "choice": [
+                    "A way to opt into a restricted variant of JavaScript",
+                    "A method for strict comparison of values",
+                    "A type of error handling",
+                    "A mode for debugging JavaScript code"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "milestone": 3,
+        "level": "Advanced",
+        "answer": [2, 0, 1],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'Proxy' object in JavaScript?",
+                "choice": [
+                    "To define custom behavior for fundamental operations",
+                    "To validate user input",
+                    "To create asynchronous functions",
+                    "To manage browser events"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'Reflect' object in JavaScript?",
+                "choice": [
+                    "To perform meta-programming operations",
+                    "To manage browser storage",
+                    "To define custom data types",
+                    "To manipulate the DOM"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'Web Worker' API in JavaScript?",
+                "choice": [
+                    "To run scripts in background threads",
+                    "To handle user authentication",
+                    "To perform network requests",
+                    "To manage browser history"
+                ]
+            }
+        ]
+    },
+
+    {
+        "id": 6,
+        "milestone": 1,
+        "level": "Beginner",
+        "answer": [0, 2, 1],
+        "questions": [
+            {
+                "question": "Which keyword is used to define a class in Java?",
+                "choice": [
+                    "class",
+                    "Class",
+                    "ClassDef",
+                    "define"
+                ]
+            },
+            {
+                "question": "Which of the following is a valid way to declare an integer variable in Java?",
+                "choice": [
+                    "int x;",
+                    "integer x;",
+                    "x int;",
+                    "variable x;"
+                ]
+            },
+            {
+                "question": "What is the result of the expression '5 + 3 * 2' in Java?",
+                "choice": [
+                    "16",
+                    "11",
+                    "13",
+                    "10"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "milestone": 2,
+        "level": "Beginner",
+        "answer": [1, 0, 2],
+        "questions": [
+            {
+                "question": "What does the 'System.out.println()' method do in Java?",
+                "choice": [
+                    "Prints output to the console",
+                    "Reads user input from the console",
+                    "Generates random numbers",
+                    "Performs mathematical calculations"
+                ]
+            },
+            {
+                "question": "What is the correct way to start a Java comment?",
+                "choice": [
+                    "//",
+                    "/*",
+                    "<!--",
+                    "-->"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'Scanner' class in Java?",
+                "choice": [
+                    "To read user input from the console",
+                    "To perform mathematical calculations",
+                    "To print output to the console",
+                    "To define custom data types"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "milestone": 3,
+        "level": "Beginner",
+        "answer": [3, 1, 0],
+        "questions": [
+            {
+                "question": "What is the correct way to include an external Java file named 'MyClass.java' in another Java file?",
+                "choice": [
+                    "import MyClass;",
+                    "include MyClass;",
+                    "require MyClass;",
+                    "import class MyClass;"
+                ]
+            },
+            {
+                "question": "What does the 'int' data type represent in Java?",
+                "choice": [
+                    "Integer values",
+                    "Floating-point numbers",
+                    "Boolean values",
+                    "Characters"
+                ]
+            },
+            {
+                "question": "What is the result of the expression '10 / 3' in Java?",
+                "choice": [
+                    "3",
+                    "3.33",
+                    "3.0",
+                    "0.33"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "milestone": 1,
+        "level": "Intermediate",
+        "answer": [1, 2, 0],
+        "questions": [
+            {
+                "question": "What does the '== and '===' operators do in Java?",
+                "choice": [
+                    "'==' checks for value equality, while '===' checks for value and type equality",
+                    "'===' checks for value equality, while '==' checks for value and type equality",
+                    "'==' and '===' are used interchangeably in Java",
+                    "'===' is used for assignment, while '==' is used for comparison"
+                ]
+            },
+            {
+                "question": "What is the purpose of 'ArrayList' in Java?",
+                "choice": [
+                    "To store and manipulate a dynamic collection of elements",
+                    "To perform mathematical calculations",
+                    "To read user input from the console",
+                    "To define custom data types"
+                ]
+            },
+            {
+                "question": "What is a constructor in Java?",
+                "choice": [
+                    "A special method that is called when an object is instantiated",
+                    "A method used to compare objects",
+                    "A method for converting objects to strings",
+                    "A method for sorting arrays"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "milestone": 2,
+        "level": "Intermediate",
+        "answer": [0, 2, 1],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'this' keyword in Java?",
+                "choice": [
+                    "To refer to the current object",
+                    "To create a new object",
+                    "To delete an object",
+                    "To access the prototype of an object"
+                ]
+            },
+            {
+                "question": "What is the difference between 'null' and 'undefined' in Java?",
+                "choice": [
+                    "'null' is an assigned value, while 'undefined' means a variable has been declared but not assigned a value",
+                    "'undefined' is an assigned value, while 'null' means a variable has been declared but not assigned a value",
+                    "'null' is used to represent empty strings, while 'undefined' is used to represent missing properties",
+                    "'undefined' is used to represent empty strings, while 'null' is used to represent missing properties"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'equals()' method in Java?",
+                "choice": [
+                    "To compare the contents of two objects",
+                    "To convert objects to strings",
+                    "To perform arithmetic operations",
+                    "To determine if an object is empty"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "milestone": 3,
+        "level": "Intermediate",
+        "answer": [1, 3, 2],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'toString()' method in Java?",
+                "choice": [
+                    "To convert objects to strings",
+                    "To compare objects",
+                    "To perform arithmetic operations",
+                    "To determine if an object is empty"
+                ]
+            },
+            {
+                "question": "What is the 'static' keyword used for in Java?",
+                "choice": [
+                    "To create class-level variables and methods",
+                    "To define variables with dynamic scope",
+                    "To reference the current object",
+                    "To create objects dynamically"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'LinkedList' class in Java?",
+                "choice": [
+                    "To implement a linked list data structure",
+                    "To perform mathematical calculations",
+                    "To read user input from the console",
+                    "To define custom data types"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "milestone": 1,
+        "level": "Advanced",
+        "answer": [0, 2, 1],
+        "questions": [
+            {
+                "question": "What is a lambda expression in Java?",
+                "choice": [
+                    "A concise way to represent an anonymous function",
+                    "A type of exception handling",
+                    "A method for sorting arrays",
+                    "A way to create class-level variables"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'final' keyword in Java?",
+                "choice": [
+                    "To define constants",
+                    "To prevent inheritance",
+                    "To create static methods",
+                    "To declare private variables"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'try', 'catch', and 'finally' blocks in Java?",
+                "choice": [
+                    "To handle exceptions",
+                    "To create conditional statements",
+                    "To define class-level variables",
+                    "To perform mathematical calculations"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "milestone": 2,
+        "level": "Advanced",
+        "answer": [1, 3, 0],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'super' keyword in Java?",
+                "choice": [
+                    "To invoke the superclass constructor",
+                    "To create sub-classes",
+                    "To define static methods",
+                    "To perform arithmetic operations"
+                ]
+            },
+            {
+                "question": "What is polymorphism in Java?",
+                "choice": [
+                    "The ability of an object to take on many forms",
+                    "The ability to define multiple constructors",
+                    "The ability to create multiple instances of a class",
+                    "The ability to perform mathematical calculations"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'interface' keyword in Java?",
+                "choice": [
+                    "To define a contract for implementing classes",
+                    "To create static variables",
+                    "To perform string manipulations",
+                    "To implement anonymous inner classes"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "milestone": 3,
+        "level": "Advanced",
+        "answer": [2, 0, 1],
+        "questions": [
+            {
+                "question": "What is the purpose of the 'Comparator' interface in Java?",
+                "choice": [
+                    "To define custom sorting orders",
+                    "To implement exception handling",
+                    "To create anonymous inner classes",
+                    "To handle network requests"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'Thread' class in Java?",
+                "choice": [
+                    "To create and manage threads",
+                    "To define custom exceptions",
+                    "To perform string manipulations",
+                    "To handle user authentication"
+                ]
+            },
+            {
+                "question": "What is the purpose of the 'java.lang.Math' class in Java?",
+                "choice": [
+                    "To perform mathematical operations",
+                    "To manage browser events",
+                    "To handle network requests",
+                    "To create custom data types"
+                ]
+            }
+        ]
     }
 ]
