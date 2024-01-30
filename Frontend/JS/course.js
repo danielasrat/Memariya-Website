@@ -47,19 +47,19 @@ const getCourse = async () => {
             <h3 class="text-lg mt-4 font-semibold lg:-ml-40">Achieve milestones by taking the Quizzes below!</h3>
             <div class="flex flex-col items-start text-lg mt-4">
                 <div>
-                    <p ${isCompleted(1,progress) ? 'text-green-500' : 'text-red-500'}>Milestone 1 :${isCompleted(1,progress)? 'Completed' : 'Not Completed'}</p>
+                    <p ${isCompleted(1,progress) === true ? 'text-green-500' : 'text-red-500'}>Milestone 1 :${isCompleted(1,progress) === true? 'Completed' : 'Not Completed'}</p>
                     <button onclick="getQuiz(${1})" class="bg-custom px-3 rounded-xl lg:ml-20 mt-3 mb-3">
                         <a href="#" class="text-white">Quiz Me</a>
                     </button>
                 </div>
                 <div>
-                    <p ${isCompleted(1,progress) ? 'text-green-500' : 'text-red-500'}>Milestone 2 :${isCompleted(2,progress)? 'Completed' : 'Not Completed'}</p>
+                    <p ${isCompleted(2,progress) === true ? 'text-green-500' : 'text-red-500'}>Milestone 2 :${isCompleted(2,progress) === true? 'Completed' : 'Not Completed'}</p>
                     <button onclick="getQuiz(${2})" class="bg-custom px-3 rounded-xl lg:ml-20 mt-3 mb-3">
                         <a href="#" class="text-white">Quiz Me</a>
                     </button>
                 </div>
                 <div>
-                    <p ${isCompleted(1,progress) ? 'text-green-500' : 'text-red-500'}>Milestone 3 :${isCompleted(3,progress)? 'Completed' : 'Not Completed'}</p>
+                    <p ${isCompleted(3,progress) === true? 'text-green-500' : 'text-red-500'}>Milestone 3 :${isCompleted(3,progress) === true? 'Completed' : 'Not Completed'}</p>
                     <button onclick="getQuiz(${3})" class="bg-custom px-3 rounded-xl lg:ml-20 mt-3 mb-3">
                         <a href="#" class="text-white">Quiz Me</a>
                     </button>
@@ -96,7 +96,7 @@ const getCourses = async () => {
         if (response.status !== 200) {
             throw new Error(data.msg)
         }
-        console.log(data)
+        // console.log(data)
         const course = data.find(course => course.id === Number(courseId));
         return course.progress
         
@@ -104,16 +104,18 @@ const getCourses = async () => {
         return [];
     }
 }
-async function getQuiz(id) {
-    localStorage.setItem('quizId', id);
-    window.location.href = '../Html/quiz-page.html';
+function getQuiz(milestone) {
+    localStorage.setItem('milestone', milestone);
+    window.location.href = '../Html/quiz.html';
 }
 
-async function getFinal(id) {
+function getFinal(id) {
     localStorage.setItem('finalId', id);
     window.location.href = '../Html/final-page.html';
 }
-async function isCompleted(milestone, progress) {
-    if (milestone in progress) return true;
+function isCompleted(milestone, progress) {
+    for (mile of progress) {
+        if (mile === milestone){return true}
+    };
     return false;
 }
