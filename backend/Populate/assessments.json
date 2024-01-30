@@ -227,122 +227,119 @@
         }
       ]
     },
-{
-  "name":"JavaScript",
-  "answer": [1, 0, 0, 3, 2, 2, 0, 0, 3, 0, 0, 0],
-  "questions": [
     {
-      "question": "What is the difference between == and === operators in JavaScript?",
-      "choice": [
-        "== performs type coercion, while === does not.",
-        "== only checks for equality of value, while === also checks for equality of data type.",
-        "== is used for strict equality comparison, while === is used for loose equality comparison.",
-        "== and === operators are exactly the same in JavaScript."
-      ]
-    },
-    {
-      "question": "What is the result of typeof null in JavaScript?",
-      "choice": [
-        "object",
-        "null",
-        "undefined",
-        "string"
-      ]
-    },
-    {
-      "question": "Which keyword is used to declare variables in JavaScript?",
-      "choice": [
-        "var",
-        "let",
-        "const",
-        "variable"
-      ]
-    },
-    {
-      "question": "What is the purpose of the 'this' keyword in JavaScript?",
-      "choice": [
-        "To refer to the current function",
-        "To refer to the global object",
-        "To refer to the parent function",
-        "To refer to the current object"
-      ]
-    },
-    {
-      "question": "Which of the following is NOT a valid JavaScript data type?",
-      "choice": [
-        "number",
-        "function",
-        "array",
-        "object"
-      ]
-    },
-    {
-      "question": "What does the 'NaN' stand for in JavaScript?",
-      "choice": [
-        "Not a Name",
-        "Not a Null",
-        "Not a Number",
-        "Not a Node"
-      ]
-    },
-    {
-      "question": "What is the result of 10 + '20' in JavaScript?",
-      "choice": [
-        "'1020'",
-        "'30'",
-        "30",
-        "NaN"
-      ]
-    },
-    {
-      "question": "Which method is used to remove the last element from an array in JavaScript?",
-      "choice": [
-        "pop()",
-        "shift()",
-        "removeLast()",
-        "splice()"
-      ]
-    },
-    {
-      "question": "What is the correct way to write a comment in JavaScript?",
-      "choice": [
-        "// This is a comment",
-        "# This is a comment ",
-        "' This is a comment",
-        "/* This is a comment */"
-      ]
-    },
-    {
-      "question": "What is the output of console.log(3 + 2 + '7') in JavaScript?",
-      "choice": [
-        "'57'",
-        "'327'",
-        "327",
-        "12"
-      ]
-    },
-    {
-      "question": "Which of the following methods is used to add a new element to the end of an array in JavaScript?",
-      "choice": [
-        "push()",
-        "append()",
-        "addToEnd()",
-        "concat()"
-      ]
-    },
-    {
-      "question": "What does the isNaN() function in JavaScript do?",
-      "choice": [
-        "Checks if a value is not a number",
-        "Checks if a value is null",
-        "Checks if a value is undefined",
-        "Checks if a value is an integer"
-      ]
+    "name":"JavaScript",
+    "answer": [1, 0, 0, 3, 2, 2, 0, 0, 3, 0, 0, 0],
+    "questions": [
+      {
+        "question": "What is the difference between == and === operators in JavaScript?",
+        "choice": [
+          "== performs type coercion, while === does not.",
+          "== only checks for equality of value, while === also checks for equality of data type.",
+          "== is used for strict equality comparison, while === is used for loose equality comparison.",
+          "== and === operators are exactly the same in JavaScript."
+        ]
+      },
+      {
+        "question": "What is the result of typeof null in JavaScript?",
+        "choice": [
+          "object",
+          "null",
+          "undefined",
+          "string"
+        ]
+      },
+      {
+        "question": "Which keyword is used to declare variables in JavaScript?",
+        "choice": [
+          "var",
+          "let",
+          "const",
+          "variable"
+        ]
+      },
+      {
+        "question": "What is the purpose of the 'this' keyword in JavaScript?",
+        "choice": [
+          "To refer to the current function",
+          "To refer to the global object",
+          "To refer to the parent function",
+          "To refer to the current object"
+        ]
+      },
+      {
+        "question": "Which of the following is NOT a valid JavaScript data type?",
+        "choice": [
+          "number",
+          "function",
+          "array",
+          "object"
+        ]
+      },
+      {
+        "question": "What does the 'NaN' stand for in JavaScript?",
+        "choice": [
+          "Not a Name",
+          "Not a Null",
+          "Not a Number",
+          "Not a Node"
+        ]
+      },
+      {
+        "question": "What is the result of 10 + '20' in JavaScript?",
+        "choice": [
+          "'1020'",
+          "'30'",
+          "30",
+          "NaN"
+        ]
+      },
+      {
+        "question": "Which method is used to remove the last element from an array in JavaScript?",
+        "choice": [
+          "pop()",
+          "shift()",
+          "removeLast()",
+          "splice()"
+        ]
+      },
+      {
+        "question": "What is the correct way to write a comment in JavaScript?",
+        "choice": [
+          "// This is a comment",
+          "# This is a comment ",
+          "' This is a comment",
+          "/* This is a comment */"
+        ]
+      },
+      {
+        "question": "What is the output of console.log(3 + 2 + '7') in JavaScript?",
+        "choice": [
+          "'57'",
+          "'327'",
+          "327",
+          "12"
+        ]
+      },
+      {
+        "question": "Which of the following methods is used to add a new element to the end of an array in JavaScript?",
+        "choice": [
+          "push()",
+          "append()",
+          "addToEnd()",
+          "concat()"
+        ]
+      },
+      {
+        "question": "What does the isNaN() function in JavaScript do?",
+        "choice": [
+          "Checks if a value is not a number",
+          "Checks if a value is null",
+          "Checks if a value is undefined",
+          "Checks if a value is an integer"
+        ]
+      }
+    ]
     }
-  ]
-}
-
-
-
   ]
   
