@@ -1,4 +1,4 @@
-const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6InRlc3QyIiwicm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE3MDY1ODIyODMsImV4cCI6MTcwOTE3NDI4M30.I-4Hpyq4Mv1sZ4OiLTC_kDaKDdmS4cW8OSsMgnbpZx0'
+const token = localStorage.getItem('token') || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwibmFtZSI6ImViYWEiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTcwNjYxNzI3NCwiZXhwIjoxNzA5MjA5Mjc0fQ.zd7ZGVABlBQ5ZiXFFbWxe-NXWiwVd5S9Qgrd0eYy7bo'
 const id = localStorage.getItem('id') || 1;
 const courseId = localStorage.getItem('courseId') || 0;
 const milestone = localStorage.getItem('milestone') || 1;

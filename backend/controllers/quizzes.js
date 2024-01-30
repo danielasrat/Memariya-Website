@@ -37,7 +37,6 @@ const getScore = async (req, res) => {
                     } else {
                         course.progress.push(milestone)
                     }
-                    console.log(course.progress)
                 }
                 return course
             });
