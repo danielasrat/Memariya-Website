@@ -33,7 +33,11 @@ const CourseSchema = new mongoose.Schema({
             users: {},
             count:0
         }
-    }
+    },
+    
+    socialMedia: String
+
+
 })
 
 module.exports = mongoose.model('Course', CourseSchema)

@@ -59,6 +59,7 @@ const getCourse = async () => {
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14v-4l-4-4 1.5-1.5L12 10l6.5 6.5L15 20l-4-4z"></path>
                         </svg>
                     </div>
+                    <a href= "${data.socialMedia}">SocialMedia Group</a>
                 </div>
                 
             </div>
