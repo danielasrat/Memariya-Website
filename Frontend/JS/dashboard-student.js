@@ -3,13 +3,15 @@ const token = localStorage.getItem('token')
 const user = JSON.parse(localStorage.getItem('user'));
 
 const id = user.id;
+const role = user.role;
 const Username = user.name;
 // console.log(id);
 
-const submitAnswer = document.getElementById('submitAnswer');
-const container = document.getElementById('container');
+// const submitAnswer = document.getElementById('submitAnswer');
+// const container = document.getElementById('container');
 
 document.getElementById('UserName').innerHTML = `${Username}`;
+document.getElementById('userRole').innerHTML = `<em class="font-bold text-lg">Profile</em >: ${role}`;
 document.getElementById('Username').innerHTML = `<em class="font-bold text-lg">Username</em>: ${Username}`;
 
 

@@ -82,11 +82,20 @@ const deleteCourse = async (req, res) => {
     res.status(StatusCodes.OK).json({ courses, msg: `Course with id ${courseId} deleted` });
 
 }
+
+const getRate = async (req, res) => {
+    const instructor = req.user.instructor;
+    const rating = instructor.rating;
+    const len = Object.keys(rating.users).length || 1
+
+    res.status(StatusCodes.OK).json(rating.count/len);
+}
 module.exports = {
     getAllInstructors,
     updateInstructor,
     getAllCourses,
     addCourse,
     deleteCourse,
+    getRate
 
 }

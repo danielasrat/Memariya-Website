@@ -79,3 +79,11 @@ submitAnswer.addEventListener('click', async (e) => {
     }
 
 })
+
+function goBack() {
+    if (user.role === 'Instructor') {
+        window.location.href = '../Html/dashboard-instructor.html';
+    } else {
+        window.location.href = '../Html/course.html';
+     }
+}

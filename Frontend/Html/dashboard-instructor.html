@@ -24,9 +24,9 @@
                     <div class="hidden md:flex items-center space-x-4">
                         <a href="home.html"
                             class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Home</a>
-                        <a href="#"
+                        <a href="./dashboard-instructor.html"
                             class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Dashboard</a>
-                        <a href="#"
+                        <a href="./badges.html"
                             class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium"
                             aria-current="page">Badges</a>
                     </div>
@@ -48,12 +48,12 @@
             <!-- Mobile menu, show/hide based on menu state. -->
             <div class="md:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#"
+                    <a href="./home.html"
                         class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium"
                         aria-current="page">Home</a>
-                    <a href="#"
+                    <a href="./dashboard-instructor.html"
                         class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Dashboard</a>
-                    <a href="#"
+                    <a href="./badges.html"
                         class="text-white hover:bg-gray-700 hover:text-white rounded-md block px-3 py-2 text-base font-medium">Badges</a>
 
                 </div>
@@ -66,13 +66,18 @@
     <main>
         <div class="ml-20" id="profile ">
             <div class="w-16 h-16 mr-4 mt-10 rounded-full">
-                <img src="../Images/avatar.png" alt="Photo of John" class="w-20">
+                <a href="./profile-student.html">
+                  <img src="../Images/avatar.png" alt="Photo of User" class="w-20">
+                </a>
             </div>
             <div class="font-Poppins">
-                <h3 class="text-xl font-bold text-custom mb-2">John Doe</h3>
-                <p><em class="font-bold text-lg">Profile</em>: Instructor</p>
-                <p><em class="font-bold text-lg">Username</em>: John1234</p>
+                <h3 id="UserName" class="text-xl font-bold text-custom mb-2"></h3>
+                <p id="userRole"><em class="font-bold text-lg">Profile</em>: Student</p>
+                <p id="Username"></p>
             </div>
+        </div>
+        <div class="bg-gray-300 h-5 w-64 relative rounded-full overflow-hidden">
+            <div class="bg-custom h-8 w-1/3"></div>
         </div>
         <div class="bg-gray-300 h-5 w-64 relative rounded-full overflow-hidden">
             <div class="bg-custom h-8 w-1/3"></div>
@@ -92,19 +97,20 @@
                     Java is a widely used programming language known for its platform independence, strong community
                     support, and
                     applications in web development, mobile (Android), and enterprise software.</p>
-                <button class="mt-4">
+                <button onclick="goToFinal('Java',6)" class="mt-4">
                     <a href="#"
                         class="bg-custom pt-2 pb-2 pr-3 pl-3 text-white rounded-md self-center hover:bg-customdark">Teach
                         Java</a>
+                </button>
+
                     <div class="block mt-2">
                         <p>for</p>
-                        <select id="courseSelect" class="border p-2 rounded bg-custom text-white">
+                        <select id="courseSelectJava" class="border p-2 rounded bg-custom text-white">
                             <option value="Beginner">Beginner</option>
                             <option value="Intermediate">Intermediate</option>
                             <option value="Advanced">Advanced</option>
                         </select>
                     </div>
-                </button>
 
             </div>
             <div class="border-custom p-6 rounded-lg shadow-md " id="card-2">
@@ -114,19 +120,20 @@
                     Python is a versatile and high-level programming language known for its readability and simplicity,
                     facilitating rapid development across diverse applications, from web development to data science and
                     artificial intelligence. </p>
-                <button class="mt-4">
+                <button onclick="goToFinal('Python',0)" class="mt-4">
                     <a href="#"
                         class="bg-custom pt-2 pb-2 pr-3 pl-3 text-white rounded-md self-center hover:bg-customdark">Teach
                         Python</a>
+            </button>
+
                     <div class="block mt-2">
                         <p>for</p>
-                        <select id="courseSelect" class="border p-2 rounded bg-custom text-white">
+                        <select id="courseSelectPython" class="border p-2 rounded bg-custom text-white">
                             <option value="Beginner">Beginner</option>
                             <option value="Intermediate">Intermediate</option>
                             <option value="Advanced">Advanced</option>
                         </select>
                     </div>
-                </button>
 
             </div>
             <div class="border-custom p-6 rounded-lg shadow-md " id="card-3">
@@ -138,19 +145,19 @@
                     dynamic and interactive content creation. Its client-side capabilities and server-side expansion
                     through
                     Node.js make it integral to modern full-stack application development.</p>
-                <button class="mt-4">
+                <button onclick="goToFinal('JavaScript',3)"class="mt-4">
                     <a href="#"
                         class="bg-custom pt-2 pb-2 pr-3 pl-3 text-white rounded-md self-center hover:bg-customdark">Teach
                         JavaScript</a>
+            </button>
                     <div class="block mt-2">
                         <p>for</p>
-                        <select id="courseSelect" class="border p-2 rounded bg-custom text-white">
+                        <select id="courseSelectJavaScript" class="border p-2 rounded bg-custom text-white">
                             <option value="Beginner">Beginner</option>
                             <option value="Intermediate">Intermediate</option>
                             <option value="Advanced">Advanced</option>
                         </select>
                     </div>
-                </button>
 
             </div>
 
@@ -185,7 +192,8 @@
         </div>
         <p class="mt-2 text-white "><span>© </span>Memariya Education Solutions, 2023</p>
     </footer>
-    <script src="../javascript/script.js"></script>
+    <script src="../JS/dashboard-instructor.js"></script>
+    <script src="../JS/auth.js"></script>
 </body>
 
 </html>
