@@ -1,12 +1,26 @@
 const express = require('express');
 const router = express.Router();
 
-const { getAllStudents,updateStudent,setPremium,getPremium,getAllCourses, addCourse,deleteCourse,getProgress,getCertificate,rate,rateInstructor } = require('../controllers/students');
+const {
+    getAllStudents,
+    updateStudent,
+    setPremium,
+    getPremium,
+    getAllCourses,
+    addCourse,
+    deleteCourse,
+    getProgress, getCertificate,
+    rate,
+    rateInstructor,
+    setGoal,
+    getGoal,
+} = require('../controllers/students');
 
 const rateAuthentication = require('../middleware/rateAuthentication')
 
 router.route('/').get(getAllStudents);
 router.route('/:id/').patch(updateStudent)
+router.route('/:id/goal').patch(setGoal).get(getGoal);
 router.route('/:id/premium').get(getPremium).patch(setPremium);
 router.route('/:id/rateInstructor').post(rateInstructor);
 router.route('/:id/rate').post(rateAuthentication,rate);

@@ -6,7 +6,7 @@ const id = user.id;
 const courseId = localStorage.getItem('courseId')
 
 // const container = document.getElementById('container');
-console.log(id, token, courseId, container.innerHTML)
+// console.log(id, token, courseId, container.innerHTML)
 const getCourse = async () => {
     try {
         const response = await fetch(`http://localhost:3000/api/v1/courses/${courseId}`, {
@@ -23,10 +23,23 @@ const getCourse = async () => {
         // console.log(data)
         const len = data.rating.users? Object.keys(data.rating.users).length : 1
         const rate = data.rating.count / len || 0
-        console.log(rate)
+        // console.log(rate)
         
 
         const progress = await getCourses();
+        let date = await getGoal();
+        let goalDate = new Date(date).getTime();
+        console.log(goalDate,date)
+        if (date) {
+            console.log('set')
+        }
+        // y = date !== null ? "block" : "none"
+        // console.log(y,date)
+        let currentDate = new Date();
+
+        // Get the date in "YYYY-MM-DD" format
+        currentDate = currentDate.toISOString().split('T')[0];
+
         const courseProgress = progress.length / 3 * 100;
         container.innerHTML = `
         <section class="sm:ml-10">
@@ -48,6 +61,21 @@ const getCourse = async () => {
                     </div>
                 </div>
                 
+            </div>
+
+
+            <div style="display:${date === null? "block": "none"}" class="max-w-md bg-white p-6 rounded-md shadow-md text-center">
+                <h1 class="text-2xl font-semibold mb-4">Set Your Goal Date</h1>
+            
+                <!-- Goal Date Form -->
+                    <div class="mb-4">
+                        <label for="goalDate" class="block text-sm font-medium text-gray-600">Goal Date:</label>
+                        <input type="date" id="goalDate" name="goalDate" min="${currentDate}" max="2025-01-02" class="mt-1 p-2 border rounded-md focus:ring focus:border-blue-300">
+                    </div>
+            
+                    <button onclick="setGoal()" type="submit" id="setGoalBtn" class="bg-custom px-3 rounded-xl lg:ml-20 mt-3 mb-3">
+                        Set Goal
+                    </button>
             </div>
 
 
@@ -106,6 +134,16 @@ const getCourse = async () => {
                 </button>
             </div>
         </section>
+
+
+        <div style="display:${date !== null? "block": "none"}">
+        <h1  class="text-2xl font-semibold mb-4">Countdown To Your Goal Time</h1>
+
+            <!-- Countdown To Your Goal Time-->
+            <div id="countdown" class="text-3xl font-bold text-blue-500"></div>
+            </div>
+        </div>
+
         `
     } catch (error) { container.innerHTML = error.message; }
 }
@@ -131,7 +169,7 @@ const getCourses = async () => {
         return course.progress
         
     } catch (error) {
-        return {msg:error.message};
+        throw new Error(error.message)
     }
 }
 function getQuiz(milestone) {
@@ -150,3 +188,94 @@ function isCompleted(milestone, progress) {
     };
     return false;
 }
+
+
+async function setGoal() {
+    let goalDate = document.getElementById('goalDate').value
+    // goalDate =goalDate.toISOString()
+    console.log(goalDate)
+    try {
+        const response = await fetch(`http://localhost:3000/api/v1/students/${id}/goal`, {
+            method: 'PATCH',
+            headers: {
+                'content-Type': 'application/json',
+                'Authorization': token
+            },
+            body: JSON.stringify({
+                goalDate,
+                courseId: courseId
+            })
+        })
+        const data = await response.json();
+        if (response.status !== 200) {
+            throw new Error(data.msg)
+        }
+        location.reload()
+    } catch (error) {
+        alert(error.message)
+    }
+}
+
+async function getGoal() {
+    try {
+        const response = await fetch(`http://localhost:3000/api/v1/students/${id}/goal`, {
+            method: 'GET',
+            headers: {
+                'content-Type': 'application/json',
+                'Authorization': token
+            },
+            // body: JSON.stringify({
+            //     courseId: courseId
+            // })
+        })
+        const data = await response.json();
+        if (response.status !== 200) {
+            throw new Error(data.msg)
+        }
+
+        console.log(data)
+        return data
+        // return new Date(data)
+    } catch (error) {
+        return null
+    }
+}
+
+// const targetDate = new Date('2025-01-01').getTime();
+
+
+
+
+
+// Set the target date and time (January 1, 2025, 12:00:00 AM)
+
+// Update the countdown every second
+async function countdown() {
+    let targetDate = await getGoal()
+    if (!targetDate) {
+        console.log('not set')
+        return
+    }
+    targetDate = new Date(targetDate).getTime();
+    const countdownInterval = setInterval(async function () {
+        const currentDate = new Date().getTime();
+        const timeDifference = targetDate - currentDate;
+        // console.log(timeDifference, targetDate, currentDate)
+
+        // Calculate days, hours, minutes, and seconds
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        // If the countdown is over, display a message and stop the interval
+        if (timeDifference <= 0) {
+            clearInterval(countdownInterval);
+            document.getElementById('countdown').innerHTML = 'Passed GoalDate!';
+        }
+    }, 1000)
+}
+countdown();

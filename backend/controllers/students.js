@@ -4,9 +4,6 @@ const Course = require('../models/Course');
 const { StatusCodes } = require('http-status-codes');
 const {BadRequestError,UnauthenticatedError, NotFoundError} = require('../errors');
 
-
-
-
 const getAllStudents = async (req, res) => {
     const students = await Student.find({});
     res.status(StatusCodes.OK).json({students, nbHits: students.length});
@@ -93,7 +90,6 @@ const deleteCourse = async (req, res) => {
     res.status(StatusCodes.OK).json({msg: `Course with id ${courseId} deleted` });
 }    
 
-
 const getProgress = async (req, res) => {
     const { id, courseId } = req.params;
     const student = await Student.findOne({ id });
@@ -160,6 +156,39 @@ const rateInstructor = async (req, res) => {
    res.status(StatusCodes.OK).json({msg:"rated successfully", rate:instructor.rating.count/len});
 }
 
+const setGoal = async (req, res) => {
+    const { goalDate, courseId } = req.body;
+    const { id } = req.user;
+    const student = await Student.findOne({ id });
+    if (!student) { 
+        throw new NotFoundError(`No student with id : ${id}`);
+    }  
+    const course = student.courses.find((course) => course.id === Number(courseId));
+    if (!course) {
+        throw new NotFoundError(`No course with id : ${courseId}`);
+    }
+    course.goalDate = goalDate;
+    await student.save();
+    res.status(StatusCodes.OK).json(course.goalDate);
+}
+
+const getGoal = async (req, res) => { 
+    let { courseId } = req.body;
+    courseId = 0
+    const { id } = req.user;
+    const student = await Student.findOne({ id });
+    if (!student) { 
+        throw new NotFoundError(`No student with id : ${id}`);
+    }  
+    const course = student.courses.find((course) => course.id === Number(courseId));
+    if (!course) {
+        throw new NotFoundError(`No course with id : ${courseId}`);
+    }
+    // const response = course.goalDate ? course.goalDate : null;
+    res.status(StatusCodes.OK).json(course.goalDate);
+}
+
+
 module.exports = {
     getAllStudents,
     updateStudent,
@@ -171,5 +200,7 @@ module.exports = {
     getProgress,
     getCertificate,
     rate,
-    rateInstructor
+    rateInstructor,
+    setGoal,
+    getGoal
 };

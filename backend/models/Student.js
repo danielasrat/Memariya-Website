@@ -24,7 +24,8 @@ const CourseSchema = new mongoose.Schema({
         enum: [1, 2, 3],
         default: []
     },
-})
+    goalDate: Date
+}, {timestamps: true})
 
 const UserSchema = new mongoose.Schema({
     id: {
