@@ -13,8 +13,8 @@ const register = async (req, res) => {
 
         const lastUser = await Instructor.findOne().sort({ id: -1 }).exec();
         const id = lastUser ? lastUser.id + 1 : 0
-        if (password.length < 6) { 
-            throw new BadRequestError('password must be at least 6 characters long');
+        if (password.length < 6 || password.length > 71) { 
+            throw new BadRequestError('password must be at least 6 and at most 71 characters long');
         }
         const hashedPassword = await bcrypt.hash(password, 10);
 
@@ -29,8 +29,8 @@ const register = async (req, res) => {
         const lastUser = await Student.findOne().sort({ id: -1 }).exec();
         const id = lastUser ? lastUser.id + 1 : 0
         
-        if (password.length < 6) { 
-            throw new BadRequestError('password must be at least 6 characters long');
+        if (password.length < 6 || password.length > 71) { 
+            throw new BadRequestError('password must be at least 6 and at most 71 characters long');
         }
         const hashedPassword = await bcrypt.hash(password, 10);
 

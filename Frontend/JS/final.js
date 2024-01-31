@@ -81,7 +81,7 @@ submitAnswer.addEventListener('click', async (e) => {
             alert('Congratulations! You have passed the course')
             if (role === "Instructor") {
                 alert('The Course is added to your badge')
-                goBack();
+                location.href = '../Html/badges.html';
             }
 
          }
