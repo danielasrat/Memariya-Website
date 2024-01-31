@@ -3,9 +3,12 @@ const token = localStorage.getItem('token')
 const user = JSON.parse(localStorage.getItem('user'))
 
 const id = user.id
+const role = user.role
+
 const courseId = localStorage.getItem('courseId')
 
 const submitAnswer = document.getElementById('submitAnswer');
+const rateCourse = document.getElementById('rateCourse');
 const container = document.getElementById('container');
 // console.log(id, token, courseId, container.innerHTML)
 
@@ -74,10 +77,49 @@ submitAnswer.addEventListener('click', async (e) => {
             throw new Error(data.msg)
         }
         document.getElementById('result').innerHTML = `${data} of 9 correct!`;
+        if (data > 7) {
+            alert('Congratulations! You have passed the course')
+            if (role === "Instructor") {
+                alert('The Course is added to your badge')
+                goBack();
+            }
+
+         }
+        if (role === "Student" && data > 7 ) {
+            document.getElementById('courseRate').style.display = 'Block';
+            submitAnswer.style.display = 'none';
+        }
     } catch (error) {
         alert(error.message)
     }
 
+})
+
+
+rateCourse.addEventListener('click', async (e) => { 
+    e.preventDefault();
+    try {
+        const response = await fetch(`http://localhost:3000/api/v1/students/${id}/rate`, {
+            method: 'POST',
+            headers: {
+                'content-Type': 'application/json',
+                'Authorization': token
+            },
+            body: JSON.stringify({
+                courseId,
+                rate: document.getElementById('rating').value
+            })
+        })
+        const data = await response.json();
+        if (response.status !== 200) {
+            throw new Error(data.msg)
+        }
+        alert(data.msg)
+        location.href = '../Html/certificates.html'
+        
+    } catch (error) {
+        alert(error.message)
+    }
 })
 
 function goBack() {

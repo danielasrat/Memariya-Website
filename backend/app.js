@@ -22,6 +22,7 @@ const finalRouter = require('./routes/finals');
 const assessmentsRouter = require('./routes/assessments');
 
 
+app.use(express.static('../Frontend/'));
 //error handling
 
 const notFoundMiddleware = require('./middleware/not-found');
