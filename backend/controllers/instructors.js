@@ -44,11 +44,12 @@ const getAllInstructors = async (req, res) => {
 }
 
 const updateInstructor = async (req, res) => { 
-    const { name, bio, email } = req.body;
+    const { name, bio, email,hourlyRate } = req.body;
     const instructor = req.user.instructor;
     if (name) instructor.name = name;
     if (bio) instructor.bio = bio;
     if (email) instructor.email = email;
+    if (hourlyRate) instructor.hourlyRate = hourlyRate;
     await instructor.save();
     res.status(StatusCodes.OK).json(instructor);
 }

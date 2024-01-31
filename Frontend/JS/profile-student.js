@@ -15,14 +15,19 @@ if (role === 'Instructor') {
     document.getElementById('dashBoardlg').href = `./dashboard-instructor.html`;
     document.getElementById('dashBoardsm').href = `./dashboard-instructor.html`;
     document.getElementById('userBio').innerHTML = `Bio: ${user.bio}`
-    getRate()
+    document.getElementById('hourlyRate').innerHTML = `Hourly Rate: ${user.hourlyRate}`
+    // getRate()
+
 
 } else { 
     document.getElementById('dashBoardlg').href = `./dashboard-student.html`;
     document.getElementById('dashBoardsm').href = `./dashboard-student.html`;
     document.getElementById('userBio').style.display = 'none'
     document.getElementById('updateBioDiv').style.display = 'none'
-    document.getElementById('rating').style.display = 'none'     
+    // document.getElementById('rating').style.display = 'none' 
+    document.getElementById('hourlyRate').style.display = 'none'
+    document.getElementById('updateHourlyRateDiv').style.display = 'none'
+    // console.log('student')
 
 
 }
@@ -102,21 +107,49 @@ async function updateBio() {
     }
 }
  
-async function getRate() {
-    try {
-        const response = await fetch(`http://localhost:3000/api/v1/${api}/${id}/rate`, {
-            method: 'GET',
+async function updateHourlyRate() {
+    try { 
+        hourlyRate = document.getElementById('newhourlyRate').value
+        const response = await fetch(`http://localhost:3000/api/v1/${api}/${id}`, {
+            method: 'PATCH',
             headers: {
                 'content-Type': 'application/json',
                 'Authorization': token
-            }
+            },
+            body: JSON.stringify({
+                hourlyRate
+            })
+            
         })
         const data = await response.json()
+        // console.log(data,hourlyRate)
         if (response.status !== 200) throw new Error(data.msg)
-        // console.log(data)
-        document.getElementById('rating').innerHTML = `Rating: ${data}`        
-        return data
+        user.hourlyRate = data.hourlyRate
+        // alert(data.hourlyRate)
+        localStorage.setItem('user', JSON.stringify(user))
+        // alert(data.hourlyRate)
+        location.reload()
     } catch (error) {
-        return console.log(error.message)
+        document.getElementById('updateHourlyRateError').innerHTML = error.message
     }
- }
+}
+
+
+// async function getRate() {
+//     try {
+//         const response = await fetch(`http://localhost:3000/api/v1/${api}/${id}/rate`, {
+//             method: 'GET',
+//             headers: {
+//                 'content-Type': 'application/json',
+//                 'Authorization': token
+//             }
+//         })
+//         const data = await response.json()
+//         if (response.status !== 200) throw new Error(data.msg)
+//         // console.log(data)
+//         document.getElementById('rating').innerHTML = `Rating: ${data}`        
+//         return data
+//     } catch (error) {
+//         return console.log(error.message)
+//     }
+//  }

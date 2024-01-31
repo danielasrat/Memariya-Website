@@ -55,7 +55,6 @@ displayTutorsBtn.addEventListener('click', async (event) => {
                         <h3 class="text-lg font-bold">${tutor.name}</h3>
                         <div>Expertise: ${selectedCourse}</div>
                         <div>Bio: ${tutor.bio}</div>
-                        <div>Average Rating: ${tutor.rate.toFixed(1)}</div>
                         <div>HourlyRate: ${tutor.hourlyRate}$</div>
                         <div>Contact Info: Email: <a href= 'mailto:${tutor.email}'>${tutor.email}</a></div>
                     </div>

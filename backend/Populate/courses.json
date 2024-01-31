@@ -25,21 +25,21 @@
         "name": "JavaScript",
         "description": "JavaScript powers the dynamic behavior of web pages. Learn the basics and start creating interactive websites.",
         "level": "Beginner",
-        "resource": "https://www.JavaScript.org/"
+        "resource": "https://drive.google.com/drive/folders/1xZBUCG2h_K6VU_nwgp1BpliQB2Bt_YZv?usp=drive_link"
     },
     {
         "id" : 4,
         "name": "JavaScript",
         "description": "Dive deeper into JavaScript! Explore concepts like DOM manipulation, AJAX, and ES6 features in this intermediate course.",
         "level": "Intermediate",
-        "resource": "https://www.JavaScript.org/"
+        "resource": "https://drive.google.com/drive/folders/1gGmjknwr9SfoT9Jryak2fvi1kIiIwZQ0?usp=drive_link"
     },
     {
         "id" : 5,
         "name": "JavaScript",
         "description": "Become a JavaScript expert! This advanced course covers topics such as Node.js, React, and advanced front-end development.",
         "level": "Advanced",
-        "resource": "https://www.JavaScript.org/"
+        "resource": "https://drive.google.com/drive/folders/1F9eAbKWXEy44JlLhd-2pBZ__P9Ay3gRe?usp=drive_link"
     },
     {
         "id" : 6,
